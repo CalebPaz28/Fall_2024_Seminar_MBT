@@ -43,7 +43,9 @@ Reference: Xing, F., Gao, D., Habili, N., Wang, H., Zhang, Z., Cao, M., & Li, S.
 
 ## **Predictions/expected outcomes**
 
-I am hopeful to develop a useful tool for analyzing our own HTS data. In addition, I am hopeful to use this tool to "screen" available HTS data for the presence of plant viruses in roses. In practice, this could be used for any plant host to determine if there are novel or unreported viruses from a given region of the world. Ideally, it would be useful to create a pipeline where we can simply input the raw fastq files and output the results from the BLAST search.
+- I am hopeful to develop a useful tool for analyzing both our own and publicly available HTS data.
+- In practice, this could be used for any plant host to determine if there are novel or unreported viruses.
+- Ideally, it would be useful to create a pipeline where we can quickly evaluate multiple samples concurrently.
 
 ## **Overview of the project**
 

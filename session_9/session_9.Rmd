@@ -1,0 +1,188 @@
+
+# Genome wide associated study (GWAS)
+
+### **Scripts**
+
+[]()
+
+### **Class Notes**
+
+This is considered a genome re-sequencing project where we can use short read sequencing to better understand the organism of interest.
+
+For more information: [LINK](https://www.nature.com/articles/s43586-021-00056-9)
+
+In the example we are working through today, we are looking at different populations of birds.
+
+#### Genome considerations
+We need a high quality reference genome. The authors of this paper also scaffold their assembly with Satsuma to generate a chromosomal level assembly and masked the repetative seqences with RepeatModeler and RepeatMasker. This is an important step because the repetitive sequences and associated assembly and alignment problems can generate spurious associations.
+
+#### Alignment
+Once the reference is complete, the next step is to align the reads from each individual sample and output a bam file. This process is covered in detail in Genome Adventure Chapter 2.
+
+
+#### Variant calling
+The next step is to call the variants (SNPs) from the bam files, this is covered in Genome Adventure Chapter 2. In the flicker paper they used GATK for their variant calls.
+
+
+```bach
+cd /scratch/[your id]
+
+mkdir flicker_gwa
+
+cd flicker_gwa
+```
+
+Now make a symbolic link to the vcf file, genome, sample info:
+
+```bach
+ln -s /home/mbtoomey/BIOL7263_Genomics/Example_data/flicker_chr3.recode.rename.vcf flicker_chr3.recode.rename.vcf
+ln -s /home/mbtoomey/BIOL7263_Genomics/Example_data/sample_info.txt sample_info.txt
+ln -s /home/mbtoomey/BIOL7263_Genomics/Example_data/NOFL_Chr3.fasta NOFL_Chr3.fasta
+ln -s /home/mbtoomey/BIOL7263_Genomics/Example_data/NOFL_Chr3.gff NOFL_Chr3.gff
+```
+
+We need to activate a new environment that contains the programs of interest.
+
+```bach
+mamba activate /home/mbtoomey/.conda/envs/GWA
+```
+
+We can start by assessing the level of genetic differentiation between allopatric populations of the eastern, yellow-shafted and western, red-shafted flickers by calculating the fixation index (FST). This a classic measure of differentation that compares the number of SNPS within and between populations. We can calculate this for the entire genome, but for our purposes we would like to scan the genome for regions with high FST to do this we will define a window of 10 kb and then slide this along the chromosome in 2 kb steps. We will use the `vcftools` to calculate the FsT. 
+
+
+1) **[script](fst.sh)**
+
+2) **[sbatch](fst.sbatch)**
+
+
+--fst-window-size specifies the number of base pairs that will be used in the calculation and --fst-window-step specifies size of the step in base pairs as the analysis moves along the chromosomes.
+
+```{r fig.cap=""}
+# Specify the path to your text file
+file_path <- "RSFL_YSFL_chr3_10kb.windowed.weir.fst"
+
+# Read the text file
+text_content <- readLines(file_path)
+
+# Print the content of the text file
+cat(head(text_content, 30), sep = "\n")
+```
+
+To find variants that are specifically associated with plumage coloration, we can look at hybrid individuals.
+
+We will use the program `beagle` to 1) phase the genotypes (infer haplotypes or closely link markers that are inherited together) 2) Infer sporadic missing genotype data.
+
+
+#### Filter the vcf to select hybrid individuals
+
+1) **[script]()**
+
+2) **[sbatch]()**
+
+Prepare plink format files and add phenotype data
+- After preparing the pink file, we should have 4 different files with the following suffix: `.bed`, `.bim`, `.nosex`, `.fam`.
+
+We can merge the `flicker_chr3_HZ_bed.fam` and `sample_info.txt` files using R. 
+
+```{r}
+require(tidyverse)
+
+fam <- read_table("flicker_chr3_HZ_bed.fam", col_names = FALSE)
+
+fam <- fam[,1:5]
+
+pheno <-read_table("sample_info.txt")
+
+fam2 <- pheno %>%
+  select(ID, crown, ear, throat, nuchal, shaft) %>%
+  left_join(fam, ., join_by(X1 == ID))
+
+write_delim(fam2, "flicker_chr3_HZ_bed.fam", delim = " ", col_names = FALSE)
+```
+
+#### Generate the relatedness matrix
+
+The shared ancestry of the individuals in our samples will confound genome-type to phenotype relationships and should be carefully considered at the sampling stage. To model associations we need to provide measures of relatedness among our samples. Here we will infer relatedness from the variant dataset. We will use the program `gemma`.
+
+```bach
+mamba deactivate
+mamba activate /home/mbtoomey/.conda/envs/gemma
+```
+
+1) **[script](relate.sh)**
+
+2) **[sbatch](relate.sbatch)**
+
+
+`-gk` specifies type of relatedness matrix to generate (1: centered matrix; 2: standardized matrix.)
+
+`-miss` missingness threshold - since we imputed with beagle this is not a concern
+
+`-maf` specify minor allele frequency threshold - we want to include all alleles regardless of frequency
+
+`-r2` specify r-squared threshold
+
+`-hwe` specify HWE test p value threshold - filters based on Hardy-Weinberg equilibrium - we do not want to filter and so set this to 0
+
+#### Test for associations
+
+We are now ready to test for associations between specific variants and the plumage color phenotype. To do this we fit a univariate linear model with our SNPs as a predictor of plumage color and calculate. We will calculate an effect size for each SNP, test against the null of no association, and correct p-values for multiple comparisons.
+
+`-lmm 4` performs three tests: Wald test (-lmm 1), likelihood ratio test (-lmm 2), score test (-lmm 3)
+
+`-n 5` specifies the column containing feather color phenotype classifications.
+
+1) **[script](gemma_lm.sh)**
+
+2) **[sbatch](gemma_lm.sbatch)**
+
+
+#### Viewing results in IGV
+We will use IGV to view the results and explore the loci that are differentiated among populations and associated with the red/yellow phenotype in the hybrid birds.
+
+`NOFL_Chr3.fasta`
+`NOFL_Chr3.gff`
+`RSFL_YSFL_10kb.windowed.weir.fst`
+`GWAS_HZ_lmm_shaft.assoc.txt`
+
+
+```{r}
+require(tidyverse)
+
+#Read in the FST result file
+fst<-read_tsv("RSFL_YSFL_chr3_10kb.windowed.weir.fst")
+
+#Subset the columns for display in IGV
+fst.igv<-fst %>%
+  select(CHROM, BIN_START, BIN_END, N_VARIANTS, WEIGHTED_FST)
+
+#write the subsetted file to tab separated file with the extension .igv
+write_tsv(fst.igv, "RSFL_YSFL_chr3_10kb.windowed.weir.fst.igv")
+
+#Read in the GWA result file
+gwa<-read_tsv("GWAS_HZ_lmm_shaft.assoc.txt")
+
+#relabel the chromosome. Gemma had converted our label "Chr3" to "0"
+gwa$chr<-"Chr3"
+
+#Subset the columns for display in IGV
+gwa.igv<-gwa %>%
+  select(chr, ps, rs, p_wald)
+
+#Rename the columns specific to the GWAS format in IGV
+colnames(gwa.igv)<-c("CHR","BP","SNP","P")
+
+#write the subsetted file to tab separated file with the extension .igv
+write_tsv(gwa.igv, "GWAS_HZ_lmm_shaft.assoc.gwas")
+```
+
+
+Now open up IGV ang go to Genomes > Load from file and load the `NOFL_Chr3.fasta`. Next go to File > Load file and load each:
+
+`NOFL_Chr3.gff`
+`RSFL_YSFL_chr3_10kb.windowed.weir.fst.igv`
+`GWAS_HZ_lmm_shaft.assoc.gwas`
+
+
+
+

@@ -1,0 +1,5 @@
+
+### **Class Notes**
+
+[Lecture Notes](lecture_notes.Rmd)
+

@@ -1,0 +1,211 @@
+---
+title: "rrv_project_array"
+author: "Paslay"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+The basic idea here is that we would like to use the array system to process multiple jobs at one time. This will speed up analysis and will increase our potential to analyze a larger number of samples.
+
+The `script` file contains the code needed to process a certain task but rather than calling one object, we can use the `$` as a place holder. In the `sbatch` file we have a specification for an array job. We also can specify how many samples to process on the array. The final piece of the puzzle is the `args` file which simply contains the objects of interest.
+
+## OSCER Basics
+
+1. Login to OSCER
+
+```bach
+ssh [YOUR_ACCOUNT_ID]@schooner.oscer.ou.edu
+```
+
+2. Activate environment
+
+```bach
+mamba activate /home/mbtoomey/.conda/envs/BIOL7263_Genomics
+```
+
+3. Submit a job to OSCER
+
+```bach
+sbatch /scratch/biol726310/BIOL7263_Genomics/array_project/scripts/[file_name.sbatch]
+```
+
+4. Check on a job
+
+```bach
+squeue -u biol726310
+```
+
+## Preliminary steps
+
+- We can start by creating all of the directories needed throughout the downstream process.
+  1. Raw SRA data
+  2. Reference genomes
+  3. Trimming
+  4. Alignment (BWA or hisat2)
+  5. Gathering unmapped reads
+  6. Do novo assembly
+
+```bach
+mkdir raw_data
+mkdir reference_seq
+mkdir trimmed_reads
+mmkdir alignment_data
+mkdir unmapped_reads
+mkdir assembly_data
+```
+
+- As a reminder, we may have to change environments throughout the process.
+
+
+## Pulling data from the SRA
+
+Below are the files submitted to OSCER:
+
+1) **[sbatch file](array_scripts/fastq_dump_array.sbatch)** 
+
+2) **[sh script](array_scripts/fastq_dump_array.sh)**
+
+3) **[.args](array_scripts/fastq_dump.args)**
+
+
+> DONE!
+
+
+## Obtaining a reference genome (*Rosa*)
+
+1) **[sbatch file](array_scripts/)** 
+
+2) **[sh script](array_scripts/)**
+
+3) **[.args](array_scripts/)**
+
+> DONE!
+
+We will likely need to use `gunzip` to decompress the files
+
+## Quality control using fastqc (before trimming)
+
+1) **[sh script](array_scripts/fastqc_array.sh)**
+
+2) **[sbatch file](array_scripts/fastqc_array.sbatch)**
+
+3) **[.args](array_scripts/fastqc_array.args)**
+
+> DONE!
+
+## Trimming
+
+1) **[sh script](array_scripts/trimming_array.sh)** 
+
+2) **[sbatch file](array_scripts/trimming_array.sbatch)**
+
+3) **[.args](array_scripts/trimming_array.args)**
+
+ 
+> DONE!
+
+## Reference mapping of reads to host genome
+
+Below I have included the script files for the `hisat2` mapping. This will require a change of the environment.
+
+```bach
+conda deactivate
+conda activate hisat2_env
+```
+
+First we will need to generate an index. In the following step, we can use the index for the alignment.
+
+1) **[sh script](array_scripts/mapping_array_index.sh)** 
+
+2) **[sbatch file](array_scripts/mapping_array_index.sbatch)**
+
+Next, we generate the alignment files (`.sam`) using the array system. The following code worked well. Reminder: We have to specify a generic output for each of the paired reads. Additionally, we have to keep each of the paired reads on the same line for this code to process. In the previous steps, we were able to put each of the arguments on seperate lines.
+
+1) **[sh script](array_scripts/mapping_array.sh)** 
+
+2) **[sbatch file](array_scripts/mapping_array.sbatch)**
+
+3) **[.args](array_scripts/mapping_array.args)**
+
+- create an index file
+- we do not have to worry about `gzip` of the trimmed reads ()
+- Aligning reads to the indexed reference genome
+
+> DONE!
+
+## Alignment manipulation and statistics
+
+Convert the `.SAM` to `.BAM`
+Sorting the `.BAM` file
+Indexing the `.BAM` file
+
+1) **[sh script](array_scripts/sam_bam_sort_array.sh)** 
+
+2) **[sbatch file](array_scripts/sam_bam_sort_array.sbatch)**
+
+3) **[.args](array_scripts/sam_bam_sort_array.args)**
+
+> DONE!
+
+## Gather unmapped reads using the flags
+
+I was able to use both tools (bedtools and samtools) to generate fastq files. Below are the documents submitted to OSCER:
+
+1) **[sh script](array_scripts/unmapped_reads_array.sh)** 
+
+2) **[sbatch file](array_scripts/unmapped_reads_array.sbatch)**
+
+3) **[.args](array_scripts/unmapped_reads_array.args)**
+
+> DONE!
+
+## Assembly of unmapped reads (rnaSPADES)
+
+1) **[sh script](array_scripts/)**
+
+2) **[sbatch file](array_scripts/)**
+
+3) **[.args](array_scripts/)**
+
+> Incomplete
+
+## Constructing databases for BLASTn and Diamond
+
+1) **[.sh script](array_scripts/)** 
+
+2) **[.sbatch file](array_scripts/)**
+
+3) **[.args](array_scripts/)**
+
+I may have to use the `mkdb` commands separately.
+
+> Incomplete
+
+## Blasting
+
+1) **[.sh script](array_scripts/)** 
+
+2) **[.sbatch file](array_scripts/)**
+
+3) **[.args](array_scripts/)**
+
+> Incomplete
+
+## Analyze BLAST results for both nucleotide and protein blast
+
+This portion of the analysis can be performed in R.
+
+> Incomplete
+
+I am thinking that I can add a new column (sample or something) so that I can generate an excel with all of the data in one file. This will be useful because I can filter by sample if I would like to. This will make analysis highly throughput.
+
+
+
+
+

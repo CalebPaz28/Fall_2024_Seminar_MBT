@@ -1,0 +1,47 @@
+---
+title: "**Fall 2024 Seminar : Homepage**"
+author: Paslay
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+> The table below contains all of the information for the course according to session.
+
+
+**[Genome Adventure Link](https://github.com/mbtoomey/genomics_adventure)**
+
+
+|Session|Topic|Date|
+|:--------:|:-------:|:-----:|
+|**[1](session_1/session_1.html)**|OSCER, Git, Rmarkdown|**8/29/24**|
+|**[2](session_2/session_2.html)**|fastqc|**9/5/24**|
+|**[3](session_3/session_3.html)**|filtered, mapped, analyzed|**9/12/24**|
+|**[4](session_4/)**|Project meeting|**9/19/24**|
+|**[5](session_5/session_5.html)**|Assembly of unmapped reads|**9/26/24**|
+|**[6](session_6/session_6.html)**|Assembly, mapping, and annotation|**10/3/24**|
+|**[7](session_7/session_7.html)**|Pulling it all together|**10/10/24**|
+|**[8](session_8/session_8.html)**|Genome Structure|**10/17/24**|
+|**[9](session_9/session_9.html)**||**10/31/24**|
+|**[10](session_10/session_10.html)**||**11/7/24**|
+|**[11](session_11/session_11.html)**||**11/14/24**|
+|**[12](session_12/session_12.html)**||**11/21/24**|
+|**[13](session_13/session_13.html)**||**11/28/24**|
+|**[14](session_14/session_14.html)**||**__/__/24**|
+|**[15](session_15/session_15.html)**||**__/__/24**|
+|**[16](session_16/session_16.html)**||**__/__/24**|
+
+
+______________________________________________________________________________
+
+
+[Project Proposal](project/proposal.html)
+
+______________________________________________________________________________
+

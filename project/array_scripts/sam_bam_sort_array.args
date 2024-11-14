@@ -1,0 +1,4 @@
+output_1.sam output_1.bam sorted_output_1.bam
+output_2.sam output_2.bam sorted_output_2.bam
+output_3.sam output_3.bam sorted_output_3.bam
+output_4.sam output_4.bam sorted_output_4.bam

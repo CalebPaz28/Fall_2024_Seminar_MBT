@@ -37,9 +37,9 @@ Reference: Xing, F., Gao, D., Habili, N., Wang, H., Zhang, Z., Cao, M., & Li, S.
 
 ## **Research Questions**
 
-1. Are there viruses that are capable of infecting roses that have not yet been reported, but have been sequenced "serendipitously" by HTS methods?
+1. Are there novel viruses that have not yet been characterized but were sequenced as a "byproduct" of some other experimental focus?
 
-2. Are there novel viruses that have not yet been characterized but were sequenced as a "byproduct" of some other experimental focus?
+2. Are there viruses that are capable of infecting roses that have not yet been reported, but have been sequenced "serendipitously" by HTS methods?
 
 ## **Predictions/expected outcomes**
 
@@ -155,7 +155,10 @@ file_path <- "data_output/mappingstats.txt"
 text_content <- readLines(file_path)
 
 # Print the content of the text file
-cat(head(text_content, 30), sep = "\n")
+#cat(head(text_content, 30), sep = "\n")
+
+kable(head(text_content, 30))%>%
+  kable_styling(font_size = 8, full_width = TRUE, position = "center")
 ```
 
 ## 4. Reference mapping of reads to host genome
@@ -168,7 +171,10 @@ file_path <- "data_output/genome_results.txt"
 text_content <- readLines(file_path)
 
 # Print the content of the text file
-cat(head(text_content, 30), sep = "\n")
+#cat(head(text_content, 30), sep = "\n")
+
+kable(head(text_content, 30)) %>%
+  kable_styling(font_size = 8, full_width = TRUE, position = "center")
 ```
 
 ## 4. Reference mapping of reads to host genome
@@ -181,7 +187,10 @@ file_path <- "data_output/alignment_summary.txt"
 text_content <- readLines(file_path)
 
 # Print the content of the text file
-cat(head(text_content, 30), sep = "\n")
+#cat(head(text_content, 30), sep = "\n")
+
+kable(head(text_content, 30)) %>%
+  kable_styling(font_size = 8, full_width = TRUE, position = "center")
 ```
 
 ## 5. Gather unmapped reads using the flags
@@ -212,7 +221,10 @@ file_path <- "data_output/quast_report.txt"
 text_content <- readLines(file_path)
 
 # Print the content of the text file
-cat(head(text_content, 30), sep = "\n")
+#cat(head(text_content, 30), sep = "\n")
+
+kable(head(text_content, 30)) %>%
+  kable_styling(font_size = 8, full_width = TRUE, position = "center")
 ```
 
 ## 7. Create a database of viruses for blast searches
@@ -220,10 +232,6 @@ cat(head(text_content, 30), sep = "\n")
 ```bach
 update_blastdb.pl --decompress nt_viruses
 ```
-
-
-
-
 
 Here is the taxon ID for viruses 10239. I was able to generate a link from the Uniprotkb website that will download all of the protein sequences using the link (rather than downloading manually).
 
@@ -380,8 +388,22 @@ kable(df_table %>% filter(Seq_Title_Org == "OS=Rose cryptic virus 1 "), caption 
 kable(head(df_table %>% filter(is.na(Seq_Title_Org)),12), caption = "Filtering by NA's")%>% kable_styling(font_size = 10, full_width = TRUE, position = "center")
 ```
 
+## **Conclusions and Final Remarks**
 
+- Two previously characterized viruses were found that were not reported from this data previously
+- RoPV has been previously reported from roses in China, BUT RCV-1 has not yet been reported
 
+```{r fig2, fig.cap="", echo=FALSE, fig.width=2, fig.height=2, fig.align='center'}
+knitr::include_graphics("data_output/article_picture_2.jpg")
+```
+
+## **Conclusions and Final Remarks**
+
+- Novel viruses may be present but this would require further analysis of the `NA's`
+- Reusable pipeline in an Rmarkdown format
+- Setting up an array-like pipeline
+
+## **Questions ?**
 
 
 

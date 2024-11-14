@@ -1,0 +1,92 @@
+---
+title: "Project Presentation"
+author: "Paslay"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## **Introduction**
+
+There are many research projects conducted on vastly different organisms that are not related to virus research. Because the focus on a given research task does not involve the detection or discovery of viruses, this is often overlooked and provides an opportunity for virologists to comb through the data and see if viruses are present. Given that each organism present on plant Earth is estimated to be infected by at least one virus, this provides ample opportunity to discover novel viruses in a host of interest.
+
+Not only is this conceptual, but this as been applied in a variety of hosts. I will focus on viruses isolated from roses in this case.
+
+## **Examples from the literature**
+
+- In roses:
+
+```{r fig1, fig.cap="", echo=FALSE, fig.width=2, fig.height=2, fig.align='center'}
+knitr::include_graphics("data_output/article_picture.jpg")
+```
+
+- **RVC** was found by looking through transcriptome data
+- This can help in the future as growers and diagnosticians decide which viruses they should screen for.
+
+Reference: Xing, F., Gao, D., Habili, N., Wang, H., Zhang, Z., Cao, M., & Li, S. (<mark>2021</mark>). Identification and molecular characterization of a novel carlavirus infecting rose plants (Rosa chinensis Jacq.). Archives of Virology, 166, 3499-3502.
+
+## **Research Questions**
+
+1. Are there viruses that are capable of infecting roses that have not yet been reported, but have been sequenced "serendipitously" by HTS methods?
+
+2. Are there novel viruses that have not yet been characterized but were sequenced as a "byproduct" of some other experimental focus?
+
+## **Predictions/expected outcomes**
+
+I am hopeful to develop a useful tool for analyzing our own HTS data. In addition, I am hopeful to use this tool to "screen" available HTS data for the presence of plant viruses in roses. In practice, this could be used for any plant host to determine if there are novel or unreported viruses from a given region of the world. Ideally, it would be useful to create a pipeline where we can simply input the raw fastq files and output the results from the BLAST search.
+
+## **Overview of the project**
+
+1. Obtain SRA data (RNA-seq)
+2. Download reference genome/s
+3. QC and trimming of raw SRA data
+4. Reference mapping of reads to host genome
+5. Gather unmapped reads using the flags
+6. Assembly of reads (rnaSPADES)
+7. Create a database of viruses for nucleotide blast
+8. Use Diamond for nucleotide-to-protein blasting
+9. Evaluate results of unmapped reads
+
+## 1. Obtain SRA data (RNA-seq)
+
+- This program will be used to obtain data associated with a specific accessions.
+
+Below are the files submitted to OSCER:
+
+```bach
+module load SRA-Toolkit/3.0.3-gompi-2022a
+
+fastq-dump --split-files $1 -O /scratch/biol726310/BIOL7263_Genomics/rrv_project
+
+
+SRR29872021
+SRR29872022
+SRR29872023
+```
+
+1) **[sbatch file](scripts/fastq_dump.sh)
+
+2) **[sh script](scripts/fastq_dump.sbatch)
+
+3) **[.args](scripts/fastq_dump.args)
+
+
+
+
+
+(Hisat2 which is best used for RNA onto DNA: think about exons)
+
+
+
+
+
+
+
+
+
+
+
+

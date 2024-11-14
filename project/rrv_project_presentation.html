@@ -3193,25 +3193,220 @@ ul.task-list{list-style: none;}
 </article></slide><slide class=""><hgroup><h2>1. Obtain SRA data (RNA-seq)</h2></hgroup><article  id="obtain-sra-data-rna-seq">
 
 <ul>
-<li>This program will be used to obtain data associated with a specific accessions.</li>
+<li><p><code>Fastq dump</code> was used to obtain data associated with specific accessions</p></li>
+<li><p>Steps: <strong>1)</strong> NCBI <strong>2)</strong> SRA <strong>3)</strong> search species <strong>4)</strong> download accession list</p></li>
+</ul>
+
+<p><a href='https://www.ncbi.nlm.nih.gov/sra/?term=Rosa+chinensis' title=''>NCBI link for <em>Rosa chinensis</em></a></p>
+
+<p>Below are the files submitted to OSCER:</p>
+
+<ol>
+<li><p><a href='scripts/fastq_dump.sh' title=''>sh file</a></p></li>
+<li><p><a href='scripts/fastq_dump.sbatch' title=''>sbatch script</a></p></li>
+<li><p><a href='scripts/fastq_dump.args' title=''>.args</a></p></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>2. Download reference genome/s</h2></hgroup><article  id="download-reference-genomes">
+
+<ul>
+<li><p>In this case, we will use the <em>Rosa chinensis</em> genome as a reference. This reference corresponds with the RNA-seq data downloaded in the previous section.</p></li>
+<li><p>Steps: <strong>1)</strong> Go to NCBI <strong>2)</strong> Go the genomes <strong>3)</strong> Search organism of interest <strong>4)</strong> Select FTP <strong>5)</strong> Copy link for file of interest (in our case, we will copy the link for both <code>genomic.fna.gz</code> and <code>genomic.gff.gz</code>)</p></li>
+</ul>
+
+<p><a href='https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/994/745/' title=''>LINK to download reference genome</a></p>
+
+<ol>
+<li><p><a href='scripts/rose_reference.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/rose_reference.sbatch' title=''>sbatch file</a></p></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>3. <code>QC</code> and trimming of raw SRA data</h2></hgroup><article  id="qc-and-trimming-of-raw-sra-data">
+
+<ul>
+<li>Here we are only looking at one sample, which is <code>SRR29872023_1</code> and <code>SRR29872023_2</code>. If we wanted to use an array system, we could look at all of the files and have <code>fastqc</code> run for each of them.</li>
 </ul>
 
 <p>Below are the files submitted to OSCER:</p>
 
-<pre class = 'prettyprint lang-bach'>module load SRA-Toolkit/3.0.3-gompi-2022a
+<ol>
+<li><p><a href='scripts/rose_fastqc.sbatch' title=''>sbatch file</a></p></li>
+<li><p><a href='scripts/rose_fastqc.sh' title=''>sh script</a></p></li>
+</ol>
 
-fastq-dump --split-files $1 -O /scratch/biol726310/BIOL7263_Genomics/rrv_project
+</article></slide><slide class=""><hgroup><h2>3. <code>QC</code> and trimming of raw SRA data</h2></hgroup><article  id="qc-and-trimming-of-raw-sra-data-1">
 
+<iframe src="data_output/SRR29872023_1_fastqc.html" width="100%" height="600px">
 
-SRR29872021
-SRR29872022
-SRR29872023</pre>
+</iframe>
+
+</article></slide><slide class=""><hgroup><h2>3. <code>QC</code> and trimming of raw SRA data</h2></hgroup><article  id="qc-and-trimming-of-raw-sra-data-2">
+
+<iframe src="data_output/SRR29872023_2_fastqc.html" width="100%" height="600px">
+
+</iframe>
+
+</article></slide><slide class=""><hgroup><h2>3. QC and <code>trimming</code> of raw SRA data</h2></hgroup><article  id="qc-and-trimming-of-raw-sra-data-3">
+
+<p>Below are the files submitted to OSCER:</p>
 
 <ol>
-<li><p>**<a href='scripts/fastq_dump.sh' title=''>sbatch file</a></p></li>
-<li><p>**<a href='scripts/fastq_dump.sbatch' title=''>sh script</a></p></li>
-<li><p>**<a href='scripts/fastq_dump.args' title=''>.args</a></p></li>
+<li><p><a href='scripts/rose_trimming.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/rose_trimming.sbatch' title=''>sbatch file</a></p></li>
 </ol>
+
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome">
+
+<ul>
+<li><p>Usually, we would use BWA (currently called <code>minimap2</code>) to map reads to a reference genome. We will be using <code>Hisat2</code> for read mapping because this program is optimized for mapping RNA reads onto a DNA genome.</p></li>
+<li><p>Steps: <strong>1)</strong> Create a reference index of the reference sequence <strong>2)</strong> Map raw, trimmed, or de novo assembled reads to the indexed reference sequence <strong>3)</strong> Generate a <code>.SAM</code> file (Simple Alignment format) <strong>4)</strong> Convert the <code>.SAM</code> to a <code>.BAM</code> (Binary alignment format) <strong>5)</strong> Sort the <code>.BAM</code> file.</p></li>
+</ul>
+
+<ol>
+<li>creating a new environment</li>
+</ol>
+
+<pre class = 'prettyprint lang-bach'>conda create -n hisat2_env</pre>
+
+<ol>
+<li>activate the environment</li>
+</ol>
+
+<pre class = 'prettyprint lang-bach'>conda activate hisat2_env</pre>
+
+<p>Below I have included the script file for the <code>hisat2</code> mapping.</p>
+
+<ol>
+<li><p><a href='scripts/hisat_mapping.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/hisat_mapping.sbatch' title=''>sbatch file</a></p></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-1">
+
+<ol>
+<li><p><a href='scripts/sam_bam_sort_in.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/sam_bam_sort_in.sbatch' title=''>sbatch file</a></p></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-2">
+
+<pre >## 48805428 + 0 in total (QC-passed reads + QC-failed reads)
+## 1532032 + 0 secondary
+## 0 + 0 supplementary
+## 0 + 0 duplicates
+## 43288907 + 0 mapped (88.70% : N/A)
+## 47273396 + 0 paired in sequencing
+## 23636698 + 0 read1
+## 23636698 + 0 read2
+## 39080286 + 0 properly paired (82.67% : N/A)
+## 39441476 + 0 with itself and mate mapped
+## 2315399 + 0 singletons (4.90% : N/A)
+## 171226 + 0 with mate mapped to a different chr
+## 152303 + 0 with mate mapped to a different chr (mapQ&gt;=5)</pre>
+
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-3">
+
+<pre >## BamQC report
+## -----------------------------------
+## 
+## &gt;&gt;&gt;&gt;&gt;&gt;&gt; Input
+## 
+##      bam file = /scratch/biol726310/BIOL7263_Genomics/rrv_project/sorted_hisat2.bam
+##      outfile = /scratch/biol726310/BIOL7263_Genomics/rrv_project/bamqc/genome_results.txt
+## 
+## 
+## &gt;&gt;&gt;&gt;&gt;&gt;&gt; Reference
+## 
+##      number of bases = 515,588,973 bp
+##      number of contigs = 55
+## 
+## 
+## &gt;&gt;&gt;&gt;&gt;&gt;&gt; Globals
+## 
+##      number of windows = 454
+## 
+##      number of reads = 47,273,396
+##      number of mapped reads = 41,756,875 (88.33%)
+##      number of secondary alignments = 1,532,032
+## 
+##      number of mapped paired reads (first in pair) = 20,965,602
+##      number of mapped paired reads (second in pair) = 20,791,273
+##      number of mapped paired reads (both in pair) = 39,441,476
+##      number of mapped paired reads (singletons) = 2,315,399
+## 
+##      number of mapped bases = 30,019,458,809 bp
+##      number of sequenced bases = 6,217,039,734 bp</pre>
+
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-4">
+
+<pre >## 23636698 reads; of these:
+##   23636698 (100.00%) were paired; of these:
+##     4096555 (17.33%) aligned concordantly 0 times
+##     19022555 (80.48%) aligned concordantly exactly 1 time
+##     517588 (2.19%) aligned concordantly &gt;1 times
+##     ----
+##     4096555 pairs aligned concordantly 0 times; of these:
+##       70100 (1.71%) aligned discordantly 1 time
+##     ----
+##     4026455 pairs aligned 0 times concordantly or discordantly; of these:
+##       8052910 mates make up the pairs; of these:
+##         5516521 (68.50%) aligned 0 times
+##         2441427 (30.32%) aligned exactly 1 time
+##         94962 (1.18%) aligned &gt;1 times
+## 88.33% overall alignment rate</pre>
+
+</article></slide><slide class=""><hgroup><h2>5. Gather unmapped reads using the flags</h2></hgroup><article  id="gather-unmapped-reads-using-the-flags">
+
+<ul>
+<li><p>After mapping the reads to the host genome (remove unnecessary reads), we can use the samtools <code>flag</code> command to extract unmapped reads. In our case, we are interested in the unmapped reads, as these may contain virus reads and subsequent virus sequences.</p></li>
+<li><p>Steps: 1) Gather the unmapped reads with the soomtools <code>flagstats</code> command 2) convert the <code>.BAM</code> file to <code>fastq</code>.</p></li>
+<li><p>I was able to use both tools (bedtools and samtools) to generate fastq files from the <code>.BAM</code> file. Below are the documents submitted to OSCER:</p></li>
+</ul>
+
+<ol>
+<li><p><a href='scripts/unmapped_reads.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/unmapped_reads.sbatch' title=''>sbatch file</a></p></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>6. Assembly of reads (rnaSPADES)</h2></hgroup><article  id="assembly-of-reads-rnaspades">
+
+<p>Below I have included my files for OSCER submission:</p>
+
+<ol>
+<li><p><a href='scripts/assembly_quast.sh' title=''>sh script</a></p></li>
+<li><p><a href='scripts/assembly_quast.sbatch' title=''>sbatch file</a></p></li>
+</ol>
+
+<pre >## All statistics are based on contigs of size &gt;= 500 bp, unless otherwise noted (e.g., &quot;# contigs (&gt;= 0 bp)&quot; and &quot;Total length (&gt;= 0 bp)&quot; include all contigs).
+## 
+## Assembly                    transcripts
+## # contigs (&gt;= 0 bp)         51321      
+## # contigs (&gt;= 1000 bp)      3542       
+## # contigs (&gt;= 5000 bp)      39         
+## # contigs (&gt;= 10000 bp)     0          
+## # contigs (&gt;= 25000 bp)     0          
+## # contigs (&gt;= 50000 bp)     0          
+## Total length (&gt;= 0 bp)      23962415   
+## Total length (&gt;= 1000 bp)   6046849    
+## Total length (&gt;= 5000 bp)   226142     
+## Total length (&gt;= 10000 bp)  0          
+## Total length (&gt;= 25000 bp)  0          
+## Total length (&gt;= 50000 bp)  0          
+## # contigs                   11871      
+## Largest contig              7867       
+## Total length                11673416   
+## GC (%)                      40.75      
+## N50                         1035       
+## N75                         687        
+## L50                         3336       
+## L75                         6846       
+## # N&#39;s per 100 kbp           36.15</pre>
+
+</article></slide><slide class=""><hgroup><h2>7. Create a database of viruses for nucleotide blast</h2></hgroup><article  id="create-a-database-of-viruses-for-nucleotide-blast">
+
+</article></slide><slide class=""><hgroup><h2>8. Use Diamond for nucleotide-to-protein blasting</h2></hgroup><article  id="use-diamond-for-nucleotide-to-protein-blasting">
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads">
 
 <p>(Hisat2 which is best used for RNA onto DNA: think about exons)</p></article></slide>
 

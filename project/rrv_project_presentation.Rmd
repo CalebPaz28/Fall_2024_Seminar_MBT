@@ -1,5 +1,5 @@
 ---
-title: "Project Presentation"
+title: "Discovering viruses in 'uncharted' territories"
 author: "Paslay"
 date: "`r Sys.Date()`"
 output: ioslides_presentation
@@ -16,13 +16,21 @@ library(kableExtra)
 
 ```
 
+## 
+
+```{r map_fig, fig.cap="", echo=FALSE, fig.width=2, fig.height=2, fig.align='center'}
+knitr::include_graphics("data_output/map_image.jpg")
+```
+
 ## **Introduction**
 
-There are many research projects conducted on vastly different organisms that are not related to virus research. Because the focus on a given research task does not involve the detection or discovery of viruses, this is often overlooked and provides an opportunity for virologists to comb through the data and see if viruses are present. Given that each organism present on plant Earth is estimated to be infected by at least one virus, this provides ample opportunity to discover novel viruses in a host of interest.
+- There are many research projects conducted on vastly different organisms that are not related to virus research. Because the focus on a given research task does not involve the detection or discovery of viruses, this is often overlooked and provides an opportunity for virologists to comb through the data and see if viruses are present. 
 
-Not only is this conceptual, but this as been applied in a variety of hosts. I will focus on viruses isolated from roses in this case.
+- Given that each organism present on plant Earth is estimated to be infected by at least one virus, this provides ample opportunity to discover novel viruses in a host of interest.
 
-## **Examples from the literature**
+- Not only is this conceptual, but this as been applied in a variety of hosts. I will focus on viruses isolated from roses in this case.
+
+## **From the literature**
 
 - In roses:
 

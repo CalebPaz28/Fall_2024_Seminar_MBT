@@ -3,10 +3,17 @@ title: "Project Presentation"
 author: "Paslay"
 date: "`r Sys.Date()`"
 output: ioslides_presentation
+css: styles.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(rmarkdown)
+library(tidyverse)
+library(patchwork)
+library(knitr)
+library(kableExtra)
+
 ```
 
 ## **Introduction**
@@ -114,6 +121,8 @@ Below are the files submitted to OSCER:
 
 - Steps: **1)** Create a reference index of the reference sequence **2)** Map raw, trimmed, or de novo assembled reads to the indexed reference sequence **3)** Generate a `.SAM` file (Simple Alignment format) **4)** Convert the `.SAM` to a `.BAM` (Binary alignment format) **5)** Sort the `.BAM` file.
 
+## 4. Reference mapping of reads to host genome
+
 1. creating a new environment
 ```bach
 conda create -n hisat2_env
@@ -123,18 +132,18 @@ conda create -n hisat2_env
 ```bach
 conda activate hisat2_env
 ```
+
+## 4. Reference mapping of reads to host genome
+
 Below I have included the script file for the `hisat2` mapping. 
 
 1) [sh script](scripts/hisat_mapping.sh)
 
 2) [sbatch file](scripts/hisat_mapping.sbatch)
 
-## 4. Reference mapping of reads to host genome
+3) [sh script](scripts/sam_bam_sort_in.sh)
 
-
-1) [sh script](scripts/sam_bam_sort_in.sh)
-
-2) [sbatch file](scripts/sam_bam_sort_in.sbatch)
+4) [sbatch file](scripts/sam_bam_sort_in.sbatch)
 
 ## 4. Reference mapping of reads to host genome
 
@@ -179,7 +188,7 @@ cat(head(text_content, 30), sep = "\n")
 
 - After mapping the reads to the host genome (remove unnecessary reads), we can use the samtools `flag` command to extract unmapped reads. In our case, we are interested in the unmapped reads, as these may contain virus reads and subsequent virus sequences.
 
-- Steps: 1) Gather the unmapped reads with the soomtools `flagstats` command 2) convert the `.BAM` file to `fastq`.
+- Steps: **1)** Gather the unmapped reads with the soomtools `flagstats` command **2)** convert the `.BAM` file to `fastq`.
 
 - I was able to use both tools (bedtools and samtools) to generate fastq files from the `.BAM` file. Below are the documents submitted to OSCER:
 
@@ -206,19 +215,171 @@ text_content <- readLines(file_path)
 cat(head(text_content, 30), sep = "\n")
 ```
 
-## 7. Create a database of viruses for nucleotide blast
+## 7. Create a database of viruses for blast searches
 
+```bach
+update_blastdb.pl --decompress nt_viruses
+```
+
+
+
+
+
+Here is the taxon ID for viruses 10239. I was able to generate a link from the Uniprotkb website that will download all of the protein sequences using the link (rather than downloading manually).
+
+Below I have included my files for OSCER submission:
+
+1) **[.sh script](scripts/protein_db_download.sh)** 
+
+2) **[.sbatch file](scripts/protein_db_download.sbatch)**
+
+
+Here is the command for building the database. This step is critical as it will generate the `.dmnd` formatted file.
+
+```bach
+diamond makedb --in /scratch/biol726310/BIOL7263_Genomics/rrv_project/databases/protein_db/all_virus_protein -d /scratch/biol726310/BIOL7263_Genomics/rrv_project/databases/protein_db/virus_protein_db
+```
 
 ## 8. Use Diamond for nucleotide-to-protein blasting
+
+Below I have included my files for OSCER submission:
+
+1) **[.sh script](scripts/nt_protein_blast.sh)** 
+
+2) **[.sbatch file](scripts/nt_protein_blast.sbatch)**
+
+- This script contains code for both the nucleotide and protein blast. This will run each of the searches at the same time. Additionally, the code has been created to output `.csv` file, which will become more important in the following step.
 
 
 ## 9. Evaluate results of unmapped reads
 
+- Using R, we manipulated the input `.csv` file to make it more user friendly, and to include important sequencing results.
+
+```{r include=FALSE}
+protein_df <- read.csv("data_output/diamond_results.csv", header = FALSE)
+
+colnames(protein_df) <- c("Query_ID","Seq_Title", "Percent_ID", "Align_Length", "Mismatch", "Gap_Open", "Query_Start", "Query_End", "Seq_Start","Send", "Evalue", "bitscore")
 
 
+df_split <- protein_df %>% 
+  mutate(NODE = str_extract(Query_ID,"NODE_[0-9]+"),
+         LENGTH = 
+str_extract(Query_ID, "length_[0-9]+"),
+         COV = 
+str_extract(Query_ID, "cov_[0-9]+\\.[0-9]+"))
 
 
-(Hisat2 which is best used for RNA onto DNA: think about exons)
+df_cleaned <- df_split %>% 
+  mutate(
+    NODE = gsub("NODE_", "", NODE),      # Remove NODE_ prefix
+    LENGTH = gsub("length_", "", LENGTH), # Remove length_ prefix
+    COV = gsub("cov_", "", COV))           # Remove cov_ prefix
+
+
+## Cleaning up the sequence title by extracting the OS portion
+df_cleaned <- df_cleaned %>% 
+  mutate(Seq_Title_Org = str_extract(Seq_Title, "OS=([^O]+)"))
+
+
+df_complete <- df_cleaned %>%
+  select("Seq_Title_Org","NODE","LENGTH","COV","Percent_ID","Align_Length","Mismatch","Gap_Open","Evalue")
+
+## Changing the variable type of one variable
+df_complete$NODE <- as.numeric(df_complete$NODE)
+df_complete$LENGTH <- as.numeric(df_complete$LENGTH)
+df_complete$COV <- as.numeric(df_complete$COV)
+df_complete$Percent_ID <- as.numeric(df_complete$Percent_ID)
+df_complete$Align_Length <- as.numeric(df_complete$Align_Length)
+df_complete$Mismatch <- as.numeric(df_complete$Mismatch)
+df_complete$Gap_Open <- as.numeric(df_complete$Gap_Open)
+
+summary(df_complete)
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r patchwork-plot, fig.align="center", warning=FALSE}
+
+plot_1 <- df_complete %>%
+  ggplot(aes(x = LENGTH))+
+  geom_histogram(fill = "skyblue", color = "black", binwidth = 30)+
+  theme_classic()+
+  ggtitle("A")
+
+plot_2 <- df_complete %>% filter(COV >= 5) %>% 
+  ggplot(aes(x = COV))+
+  geom_histogram(fill = "skyblue", color = "black", binwidth = 30)+
+  theme_classic()+
+  ggtitle("B")
+
+plot_3 <- df_complete %>% ggplot(aes(x = Percent_ID))+
+  geom_histogram(fill = "skyblue", color = "black", binwidth = 30)+
+  theme_classic()+
+  ggtitle("C")
+
+plot_4 <- df_complete %>% ggplot(aes(x = Align_Length))+
+  geom_histogram(fill = "skyblue", color = "black", binwidth = 30)+
+  theme_classic()+
+  ggtitle("D")
+
+plot_5 <- df_complete %>% ggplot(aes(x = Mismatch))+
+  geom_histogram(fill = "skyblue", color = "black", binwidth = 30)+
+  theme_classic()+
+  ggtitle("E")
+
+(plot_1 | plot_2) / (plot_3 | plot_4 | plot_5) + plot_annotation("Search Results") # "|" arranges side-by-side, "/" arranges on top of each other
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+df_table <- df_complete %>% select(!c(Gap_Open, Align_Length))
+
+kable(head(df_table %>% arrange(desc(LENGTH)),10), caption = "Arranging by LENGTH")%>%
+  kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+kable(head(df_table %>% arrange(desc(COV)),10), caption = "Arranging by COV")%>%
+  kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+kable(head(df_table %>% arrange(desc(Percent_ID)),10), caption = "Arranging by Percent_ID")%>%
+  kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+kable(head(df_table %>% arrange(Mismatch),10), caption = "Arranging by Mismatch")%>%
+  kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+We can filter by a specific observations. This is a very useful tool, as we can obtain all of the nodes (contigs) that correspond to a given virus or other organism.
+
+```{r}
+kable(df_table %>% filter(Seq_Title_Org == "OS=Rose partitivirus "), caption = "Filtering by RoPV")%>% kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+kable(df_table %>% filter(Seq_Title_Org == "OS=Rose cryptic virus 1 "), caption = "Filtering by RCV-1")%>% kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
+## 9. Evaluate results of unmapped reads
+
+```{r}
+kable(head(df_table %>% filter(is.na(Seq_Title_Org)),12), caption = "Filtering by NA's")%>% kable_styling(font_size = 10, full_width = TRUE, position = "center")
+```
+
 
 
 

@@ -3087,6 +3087,1035 @@ if (!window.Shiny) {
 
 
 </script>
+  <script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+  <style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
+  <style type="text/css">
+table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}table{background-color:transparent}caption{padding-top:8px;padding-bottom:8px;color:#777;text-align:left}th{text-align:left}.table{width:100%;max-width:100%;margin-bottom:20px}.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>td{border-top:0}.table>tbody+tbody{border-top:2px solid #ddd}.table .table{background-color:#fff}.table-condensed>thead>tr>th,.table-condensed>tbody>tr>th,.table-condensed>tfoot>tr>th,.table-condensed>thead>tr>td,.table-condensed>tbody>tr>td,.table-condensed>tfoot>tr>td{padding:5px}.table-bordered{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>thead>tr>td{border-bottom-width:2px}.table-striped>tbody>tr:nth-of-type(odd){background-color:#f9f9f9}.table-hover>tbody>tr:hover{background-color:#f5f5f5}table col[class*="col-"]{position:static;float:none;display:table-column}table td[class*="col-"],table th[class*="col-"]{position:static;float:none;display:table-cell}.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{background-color:#f5f5f5}.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr.active:hover>th{background-color:#e8e8e8}.table>thead>tr>td.success,.table>tbody>tr>td.success,.table>tfoot>tr>td.success,.table>thead>tr>th.success,.table>tbody>tr>th.success,.table>tfoot>tr>th.success,.table>thead>tr.success>td,.table>tbody>tr.success>td,.table>tfoot>tr.success>td,.table>thead>tr.success>th,.table>tbody>tr.success>th,.table>tfoot>tr.success>th{background-color:#dff0d8}.table-hover>tbody>tr>td.success:hover,.table-hover>tbody>tr>th.success:hover,.table-hover>tbody>tr.success:hover>td,.table-hover>tbody>tr:hover>.success,.table-hover>tbody>tr.success:hover>th{background-color:#d0e9c6}.table>thead>tr>td.info,.table>tbody>tr>td.info,.table>tfoot>tr>td.info,.table>thead>tr>th.info,.table>tbody>tr>th.info,.table>tfoot>tr>th.info,.table>thead>tr.info>td,.table>tbody>tr.info>td,.table>tfoot>tr.info>td,.table>thead>tr.info>th,.table>tbody>tr.info>th,.table>tfoot>tr.info>th{background-color:#d9edf7}.table-hover>tbody>tr>td.info:hover,.table-hover>tbody>tr>th.info:hover,.table-hover>tbody>tr.info:hover>td,.table-hover>tbody>tr:hover>.info,.table-hover>tbody>tr.info:hover>th{background-color:#c4e3f3}.table>thead>tr>td.warning,.table>tbody>tr>td.warning,.table>tfoot>tr>td.warning,.table>thead>tr>th.warning,.table>tbody>tr>th.warning,.table>tfoot>tr>th.warning,.table>thead>tr.warning>td,.table>tbody>tr.warning>td,.table>tfoot>tr.warning>td,.table>thead>tr.warning>th,.table>tbody>tr.warning>th,.table>tfoot>tr.warning>th{background-color:#fcf8e3}.table-hover>tbody>tr>td.warning:hover,.table-hover>tbody>tr>th.warning:hover,.table-hover>tbody>tr.warning:hover>td,.table-hover>tbody>tr:hover>.warning,.table-hover>tbody>tr.warning:hover>th{background-color:#faf2cc}.table>thead>tr>td.danger,.table>tbody>tr>td.danger,.table>tfoot>tr>td.danger,.table>thead>tr>th.danger,.table>tbody>tr>th.danger,.table>tfoot>tr>th.danger,.table>thead>tr.danger>td,.table>tbody>tr.danger>td,.table>tfoot>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr.danger>th,.table>tfoot>tr.danger>th{background-color:#f2dede}.table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr:hover>.danger,.table-hover>tbody>tr.danger:hover>th{background-color:#ebcccc}.table-responsive{overflow-x:auto;min-height:0.01%}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd}.table-responsive>.table{margin-bottom:0}.table-responsive>.table>thead>tr>th,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}.table-responsive>.table-bordered{border:0}.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}}.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:normal;letter-spacing:normal;line-break:auto;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:12px;opacity:0;filter:alpha(opacity=0)}.tooltip.in{opacity:.9;filter:alpha(opacity=90)}.tooltip.top{margin-top:-3px;padding:5px 0}.tooltip.right{margin-left:3px;padding:0 5px}.tooltip.bottom{margin-top:3px;padding:5px 0}.tooltip.left{margin-left:-3px;padding:0 5px}.tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:4px}.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-left .tooltip-arrow{bottom:0;right:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-right .tooltip-arrow{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#000}.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#000}.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:normal;letter-spacing:normal;line-break:auto;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:14px;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2)}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{margin:0;padding:8px 14px;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{border-width:10px;content:""}.popover.top>.arrow{left:50%;margin-left:-11px;border-bottom-width:0;border-top-color:#999;border-top-color:rgba(0,0,0,0.25);bottom:-11px}.popover.top>.arrow:after{content:" ";bottom:1px;margin-left:-10px;border-bottom-width:0;border-top-color:#fff}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-left-width:0;border-right-color:#999;border-right-color:rgba(0,0,0,0.25)}.popover.right>.arrow:after{content:" ";left:1px;bottom:-10px;border-left-width:0;border-right-color:#fff}.popover.bottom>.arrow{left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,0.25);top:-11px}.popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,0.25)}.popover.left>.arrow:after{content:" ";right:1px;border-right-width:0;border-left-color:#fff;bottom:-10px}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
+</style>
+  <script>/* ========================================================================
+ * Bootstrap: tooltip.js v3.4.1
+ * https://getbootstrap.com/docs/3.4/javascript/#tooltip
+ * Inspired by the original jQuery.tipsy by Jason Frame
+ * ========================================================================
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
++function ($) {
+  'use strict';
+
+  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn']
+
+  var uriAttrs = [
+    'background',
+    'cite',
+    'href',
+    'itemtype',
+    'longdesc',
+    'poster',
+    'src',
+    'xlink:href'
+  ]
+
+  var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
+
+  var DefaultWhitelist = {
+    // Global attributes allowed on any supplied element below.
+    '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
+    a: ['target', 'href', 'title', 'rel'],
+    area: [],
+    b: [],
+    br: [],
+    col: [],
+    code: [],
+    div: [],
+    em: [],
+    hr: [],
+    h1: [],
+    h2: [],
+    h3: [],
+    h4: [],
+    h5: [],
+    h6: [],
+    i: [],
+    img: ['src', 'alt', 'title', 'width', 'height'],
+    li: [],
+    ol: [],
+    p: [],
+    pre: [],
+    s: [],
+    small: [],
+    span: [],
+    sub: [],
+    sup: [],
+    strong: [],
+    u: [],
+    ul: []
+  }
+
+  /**
+   * A pattern that recognizes a commonly useful subset of URLs that are safe.
+   *
+   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
+   */
+  var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi
+
+  /**
+   * A pattern that matches safe data URLs. Only matches image, video and audio types.
+   *
+   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
+   */
+  var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i
+
+  function allowedAttribute(attr, allowedAttributeList) {
+    var attrName = attr.nodeName.toLowerCase()
+
+    if ($.inArray(attrName, allowedAttributeList) !== -1) {
+      if ($.inArray(attrName, uriAttrs) !== -1) {
+        return Boolean(attr.nodeValue.match(SAFE_URL_PATTERN) || attr.nodeValue.match(DATA_URL_PATTERN))
+      }
+
+      return true
+    }
+
+    var regExp = $(allowedAttributeList).filter(function (index, value) {
+      return value instanceof RegExp
+    })
+
+    // Check if a regular expression validates the attribute.
+    for (var i = 0, l = regExp.length; i < l; i++) {
+      if (attrName.match(regExp[i])) {
+        return true
+      }
+    }
+
+    return false
+  }
+
+  function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
+    if (unsafeHtml.length === 0) {
+      return unsafeHtml
+    }
+
+    if (sanitizeFn && typeof sanitizeFn === 'function') {
+      return sanitizeFn(unsafeHtml)
+    }
+
+    // IE 8 and below don't support createHTMLDocument
+    if (!document.implementation || !document.implementation.createHTMLDocument) {
+      return unsafeHtml
+    }
+
+    var createdDocument = document.implementation.createHTMLDocument('sanitization')
+    createdDocument.body.innerHTML = unsafeHtml
+
+    var whitelistKeys = $.map(whiteList, function (el, i) { return i })
+    var elements = $(createdDocument.body).find('*')
+
+    for (var i = 0, len = elements.length; i < len; i++) {
+      var el = elements[i]
+      var elName = el.nodeName.toLowerCase()
+
+      if ($.inArray(elName, whitelistKeys) === -1) {
+        el.parentNode.removeChild(el)
+
+        continue
+      }
+
+      var attributeList = $.map(el.attributes, function (el) { return el })
+      var whitelistedAttributes = [].concat(whiteList['*'] || [], whiteList[elName] || [])
+
+      for (var j = 0, len2 = attributeList.length; j < len2; j++) {
+        if (!allowedAttribute(attributeList[j], whitelistedAttributes)) {
+          el.removeAttribute(attributeList[j].nodeName)
+        }
+      }
+    }
+
+    return createdDocument.body.innerHTML
+  }
+
+  // TOOLTIP PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Tooltip = function (element, options) {
+    this.type       = null
+    this.options    = null
+    this.enabled    = null
+    this.timeout    = null
+    this.hoverState = null
+    this.$element   = null
+    this.inState    = null
+
+    this.init('tooltip', element, options)
+  }
+
+  Tooltip.VERSION  = '3.4.1'
+
+  Tooltip.TRANSITION_DURATION = 150
+
+  Tooltip.DEFAULTS = {
+    animation: true,
+    placement: 'top',
+    selector: false,
+    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+    trigger: 'hover focus',
+    title: '',
+    delay: 0,
+    html: false,
+    container: false,
+    viewport: {
+      selector: 'body',
+      padding: 0
+    },
+    sanitize : true,
+    sanitizeFn : null,
+    whiteList : DefaultWhitelist
+  }
+
+  Tooltip.prototype.init = function (type, element, options) {
+    this.enabled   = true
+    this.type      = type
+    this.$element  = $(element)
+    this.options   = this.getOptions(options)
+    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
+    this.inState   = { click: false, hover: false, focus: false }
+
+    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
+      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
+    }
+
+    var triggers = this.options.trigger.split(' ')
+
+    for (var i = triggers.length; i--;) {
+      var trigger = triggers[i]
+
+      if (trigger == 'click') {
+        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this))
+      } else if (trigger != 'manual') {
+        var eventIn  = trigger == 'hover' ? 'mouseenter' : 'focusin'
+        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout'
+
+        this.$element.on(eventIn  + '.' + this.type, this.options.selector, $.proxy(this.enter, this))
+        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this))
+      }
+    }
+
+    this.options.selector ?
+      (this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' })) :
+      this.fixTitle()
+  }
+
+  Tooltip.prototype.getDefaults = function () {
+    return Tooltip.DEFAULTS
+  }
+
+  Tooltip.prototype.getOptions = function (options) {
+    var dataAttributes = this.$element.data()
+
+    for (var dataAttr in dataAttributes) {
+      if (dataAttributes.hasOwnProperty(dataAttr) && $.inArray(dataAttr, DISALLOWED_ATTRIBUTES) !== -1) {
+        delete dataAttributes[dataAttr]
+      }
+    }
+
+    options = $.extend({}, this.getDefaults(), dataAttributes, options)
+
+    if (options.delay && typeof options.delay == 'number') {
+      options.delay = {
+        show: options.delay,
+        hide: options.delay
+      }
+    }
+
+    if (options.sanitize) {
+      options.template = sanitizeHtml(options.template, options.whiteList, options.sanitizeFn)
+    }
+
+    return options
+  }
+
+  Tooltip.prototype.getDelegateOptions = function () {
+    var options  = {}
+    var defaults = this.getDefaults()
+
+    this._options && $.each(this._options, function (key, value) {
+      if (defaults[key] != value) options[key] = value
+    })
+
+    return options
+  }
+
+  Tooltip.prototype.enter = function (obj) {
+    var self = obj instanceof this.constructor ?
+      obj : $(obj.currentTarget).data('bs.' + this.type)
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
+      $(obj.currentTarget).data('bs.' + this.type, self)
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true
+    }
+
+    if (self.tip().hasClass('in') || self.hoverState == 'in') {
+      self.hoverState = 'in'
+      return
+    }
+
+    clearTimeout(self.timeout)
+
+    self.hoverState = 'in'
+
+    if (!self.options.delay || !self.options.delay.show) return self.show()
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'in') self.show()
+    }, self.options.delay.show)
+  }
+
+  Tooltip.prototype.isInStateTrue = function () {
+    for (var key in this.inState) {
+      if (this.inState[key]) return true
+    }
+
+    return false
+  }
+
+  Tooltip.prototype.leave = function (obj) {
+    var self = obj instanceof this.constructor ?
+      obj : $(obj.currentTarget).data('bs.' + this.type)
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
+      $(obj.currentTarget).data('bs.' + this.type, self)
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false
+    }
+
+    if (self.isInStateTrue()) return
+
+    clearTimeout(self.timeout)
+
+    self.hoverState = 'out'
+
+    if (!self.options.delay || !self.options.delay.hide) return self.hide()
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'out') self.hide()
+    }, self.options.delay.hide)
+  }
+
+  Tooltip.prototype.show = function () {
+    var e = $.Event('show.bs.' + this.type)
+
+    if (this.hasContent() && this.enabled) {
+      this.$element.trigger(e)
+
+      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
+      if (e.isDefaultPrevented() || !inDom) return
+      var that = this
+
+      var $tip = this.tip()
+
+      var tipId = this.getUID(this.type)
+
+      this.setContent()
+      $tip.attr('id', tipId)
+      this.$element.attr('aria-describedby', tipId)
+
+      if (this.options.animation) $tip.addClass('fade')
+
+      var placement = typeof this.options.placement == 'function' ?
+        this.options.placement.call(this, $tip[0], this.$element[0]) :
+        this.options.placement
+
+      var autoToken = /\s?auto?\s?/i
+      var autoPlace = autoToken.test(placement)
+      if (autoPlace) placement = placement.replace(autoToken, '') || 'top'
+
+      $tip
+        .detach()
+        .css({ top: 0, left: 0, display: 'block' })
+        .addClass(placement)
+        .data('bs.' + this.type, this)
+
+      this.options.container ? $tip.appendTo($(document).find(this.options.container)) : $tip.insertAfter(this.$element)
+      this.$element.trigger('inserted.bs.' + this.type)
+
+      var pos          = this.getPosition()
+      var actualWidth  = $tip[0].offsetWidth
+      var actualHeight = $tip[0].offsetHeight
+
+      if (autoPlace) {
+        var orgPlacement = placement
+        var viewportDim = this.getPosition(this.$viewport)
+
+        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
+                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
+                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
+                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
+                    placement
+
+        $tip
+          .removeClass(orgPlacement)
+          .addClass(placement)
+      }
+
+      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
+
+      this.applyPlacement(calculatedOffset, placement)
+
+      var complete = function () {
+        var prevHoverState = that.hoverState
+        that.$element.trigger('shown.bs.' + that.type)
+        that.hoverState = null
+
+        if (prevHoverState == 'out') that.leave(that)
+      }
+
+      $.support.transition && this.$tip.hasClass('fade') ?
+        $tip
+          .one('bsTransitionEnd', complete)
+          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+        complete()
+    }
+  }
+
+  Tooltip.prototype.applyPlacement = function (offset, placement) {
+    var $tip   = this.tip()
+    var width  = $tip[0].offsetWidth
+    var height = $tip[0].offsetHeight
+
+    // manually read margins because getBoundingClientRect includes difference
+    var marginTop = parseInt($tip.css('margin-top'), 10)
+    var marginLeft = parseInt($tip.css('margin-left'), 10)
+
+    // we must check for NaN for ie 8/9
+    if (isNaN(marginTop))  marginTop  = 0
+    if (isNaN(marginLeft)) marginLeft = 0
+
+    offset.top  += marginTop
+    offset.left += marginLeft
+
+    // $.fn.offset doesn't round pixel values
+    // so we use setOffset directly with our own function B-0
+    $.offset.setOffset($tip[0], $.extend({
+      using: function (props) {
+        $tip.css({
+          top: Math.round(props.top),
+          left: Math.round(props.left)
+        })
+      }
+    }, offset), 0)
+
+    $tip.addClass('in')
+
+    // check to see if placing tip in new offset caused the tip to resize itself
+    var actualWidth  = $tip[0].offsetWidth
+    var actualHeight = $tip[0].offsetHeight
+
+    if (placement == 'top' && actualHeight != height) {
+      offset.top = offset.top + height - actualHeight
+    }
+
+    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight)
+
+    if (delta.left) offset.left += delta.left
+    else offset.top += delta.top
+
+    var isVertical          = /top|bottom/.test(placement)
+    var arrowDelta          = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight
+    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight'
+
+    $tip.offset(offset)
+    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
+  }
+
+  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+    this.arrow()
+      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
+      .css(isVertical ? 'top' : 'left', '')
+  }
+
+  Tooltip.prototype.setContent = function () {
+    var $tip  = this.tip()
+    var title = this.getTitle()
+
+    if (this.options.html) {
+      if (this.options.sanitize) {
+        title = sanitizeHtml(title, this.options.whiteList, this.options.sanitizeFn)
+      }
+
+      $tip.find('.tooltip-inner').html(title)
+    } else {
+      $tip.find('.tooltip-inner').text(title)
+    }
+
+    $tip.removeClass('fade in top bottom left right')
+  }
+
+  Tooltip.prototype.hide = function (callback) {
+    var that = this
+    var $tip = $(this.$tip)
+    var e    = $.Event('hide.bs.' + this.type)
+
+    function complete() {
+      if (that.hoverState != 'in') $tip.detach()
+      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
+        that.$element
+          .removeAttr('aria-describedby')
+          .trigger('hidden.bs.' + that.type)
+      }
+      callback && callback()
+    }
+
+    this.$element.trigger(e)
+
+    if (e.isDefaultPrevented()) return
+
+    $tip.removeClass('in')
+
+    $.support.transition && $tip.hasClass('fade') ?
+      $tip
+        .one('bsTransitionEnd', complete)
+        .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+      complete()
+
+    this.hoverState = null
+
+    return this
+  }
+
+  Tooltip.prototype.fixTitle = function () {
+    var $e = this.$element
+    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
+      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
+    }
+  }
+
+  Tooltip.prototype.hasContent = function () {
+    return this.getTitle()
+  }
+
+  Tooltip.prototype.getPosition = function ($element) {
+    $element   = $element || this.$element
+
+    var el     = $element[0]
+    var isBody = el.tagName == 'BODY'
+
+    var elRect    = el.getBoundingClientRect()
+    if (elRect.width == null) {
+      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
+      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
+    }
+    var isSvg = window.SVGElement && el instanceof window.SVGElement
+    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
+    // See https://github.com/twbs/bootstrap/issues/20280
+    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
+    var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
+    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
+
+    return $.extend({}, elRect, scroll, outerDims, elOffset)
+  }
+
+  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
+    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
+           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
+
+  }
+
+  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
+    var delta = { top: 0, left: 0 }
+    if (!this.$viewport) return delta
+
+    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
+    var viewportDimensions = this.getPosition(this.$viewport)
+
+    if (/right|left/.test(placement)) {
+      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
+      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
+      if (topEdgeOffset < viewportDimensions.top) { // top overflow
+        delta.top = viewportDimensions.top - topEdgeOffset
+      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
+        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
+      }
+    } else {
+      var leftEdgeOffset  = pos.left - viewportPadding
+      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
+      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
+        delta.left = viewportDimensions.left - leftEdgeOffset
+      } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
+        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
+      }
+    }
+
+    return delta
+  }
+
+  Tooltip.prototype.getTitle = function () {
+    var title
+    var $e = this.$element
+    var o  = this.options
+
+    title = $e.attr('data-original-title')
+      || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
+
+    return title
+  }
+
+  Tooltip.prototype.getUID = function (prefix) {
+    do prefix += ~~(Math.random() * 1000000)
+    while (document.getElementById(prefix))
+    return prefix
+  }
+
+  Tooltip.prototype.tip = function () {
+    if (!this.$tip) {
+      this.$tip = $(this.options.template)
+      if (this.$tip.length != 1) {
+        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!')
+      }
+    }
+    return this.$tip
+  }
+
+  Tooltip.prototype.arrow = function () {
+    return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
+  }
+
+  Tooltip.prototype.enable = function () {
+    this.enabled = true
+  }
+
+  Tooltip.prototype.disable = function () {
+    this.enabled = false
+  }
+
+  Tooltip.prototype.toggleEnabled = function () {
+    this.enabled = !this.enabled
+  }
+
+  Tooltip.prototype.toggle = function (e) {
+    var self = this
+    if (e) {
+      self = $(e.currentTarget).data('bs.' + this.type)
+      if (!self) {
+        self = new this.constructor(e.currentTarget, this.getDelegateOptions())
+        $(e.currentTarget).data('bs.' + this.type, self)
+      }
+    }
+
+    if (e) {
+      self.inState.click = !self.inState.click
+      if (self.isInStateTrue()) self.enter(self)
+      else self.leave(self)
+    } else {
+      self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
+    }
+  }
+
+  Tooltip.prototype.destroy = function () {
+    var that = this
+    clearTimeout(this.timeout)
+    this.hide(function () {
+      that.$element.off('.' + that.type).removeData('bs.' + that.type)
+      if (that.$tip) {
+        that.$tip.detach()
+      }
+      that.$tip = null
+      that.$arrow = null
+      that.$viewport = null
+      that.$element = null
+    })
+  }
+
+  Tooltip.prototype.sanitizeHtml = function (unsafeHtml) {
+    return sanitizeHtml(unsafeHtml, this.options.whiteList, this.options.sanitizeFn)
+  }
+
+  // TOOLTIP PLUGIN DEFINITION
+  // =========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.tooltip')
+      var options = typeof option == 'object' && option
+
+      if (!data && /destroy|hide/.test(option)) return
+      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.tooltip
+
+  $.fn.tooltip             = Plugin
+  $.fn.tooltip.Constructor = Tooltip
+
+
+  // TOOLTIP NO CONFLICT
+  // ===================
+
+  $.fn.tooltip.noConflict = function () {
+    $.fn.tooltip = old
+    return this
+  }
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: popover.js v3.4.1
+ * https://getbootstrap.com/docs/3.4/javascript/#popovers
+ * ========================================================================
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // POPOVER PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Popover = function (element, options) {
+    this.init('popover', element, options)
+  }
+
+  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
+
+  Popover.VERSION  = '3.4.1'
+
+  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
+    placement: 'right',
+    trigger: 'click',
+    content: '',
+    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+  })
+
+
+  // NOTE: POPOVER EXTENDS tooltip.js
+  // ================================
+
+  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
+
+  Popover.prototype.constructor = Popover
+
+  Popover.prototype.getDefaults = function () {
+    return Popover.DEFAULTS
+  }
+
+  Popover.prototype.setContent = function () {
+    var $tip    = this.tip()
+    var title   = this.getTitle()
+    var content = this.getContent()
+
+    if (this.options.html) {
+      var typeContent = typeof content
+
+      if (this.options.sanitize) {
+        title = this.sanitizeHtml(title)
+
+        if (typeContent === 'string') {
+          content = this.sanitizeHtml(content)
+        }
+      }
+
+      $tip.find('.popover-title').html(title)
+      $tip.find('.popover-content').children().detach().end()[
+        typeContent === 'string' ? 'html' : 'append'
+      ](content)
+    } else {
+      $tip.find('.popover-title').text(title)
+      $tip.find('.popover-content').children().detach().end().text(content)
+    }
+
+    $tip.removeClass('fade top bottom left right in')
+
+    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
+    // this manually by checking the contents.
+    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
+  }
+
+  Popover.prototype.hasContent = function () {
+    return this.getTitle() || this.getContent()
+  }
+
+  Popover.prototype.getContent = function () {
+    var $e = this.$element
+    var o  = this.options
+
+    return $e.attr('data-content')
+      || (typeof o.content == 'function' ?
+        o.content.call($e[0]) :
+        o.content)
+  }
+
+  Popover.prototype.arrow = function () {
+    return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
+  }
+
+
+  // POPOVER PLUGIN DEFINITION
+  // =========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.popover')
+      var options = typeof option == 'object' && option
+
+      if (!data && /destroy|hide/.test(option)) return
+      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.popover
+
+  $.fn.popover             = Plugin
+  $.fn.popover.Constructor = Popover
+
+
+  // POPOVER NO CONFLICT
+  // ===================
+
+  $.fn.popover.noConflict = function () {
+    $.fn.popover = old
+    return this
+  }
+
+}(jQuery);
+</script>
 
   <style type="text/css">
 b, strong {
@@ -3127,6 +4156,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
+  <style type="text/css">.small-table table {font-size: 8px;width: 50%; }</style>
 
 </head>
 
@@ -3262,6 +4292,8 @@ ul.task-list{list-style: none;}
 <li><p>Steps: <strong>1)</strong> Create a reference index of the reference sequence <strong>2)</strong> Map raw, trimmed, or de novo assembled reads to the indexed reference sequence <strong>3)</strong> Generate a <code>.SAM</code> file (Simple Alignment format) <strong>4)</strong> Convert the <code>.SAM</code> to a <code>.BAM</code> (Binary alignment format) <strong>5)</strong> Sort the <code>.BAM</code> file.</p></li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-1">
+
 <ol>
 <li>creating a new environment</li>
 </ol>
@@ -3274,21 +4306,18 @@ ul.task-list{list-style: none;}
 
 <pre class = 'prettyprint lang-bach'>conda activate hisat2_env</pre>
 
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-2">
+
 <p>Below I have included the script file for the <code>hisat2</code> mapping.</p>
 
 <ol>
 <li><p><a href='scripts/hisat_mapping.sh' title=''>sh script</a></p></li>
 <li><p><a href='scripts/hisat_mapping.sbatch' title=''>sbatch file</a></p></li>
-</ol>
-
-</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-1">
-
-<ol>
 <li><p><a href='scripts/sam_bam_sort_in.sh' title=''>sh script</a></p></li>
 <li><p><a href='scripts/sam_bam_sort_in.sbatch' title=''>sbatch file</a></p></li>
 </ol>
 
-</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-2">
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-3">
 
 <pre >## 48805428 + 0 in total (QC-passed reads + QC-failed reads)
 ## 1532032 + 0 secondary
@@ -3304,7 +4333,7 @@ ul.task-list{list-style: none;}
 ## 171226 + 0 with mate mapped to a different chr
 ## 152303 + 0 with mate mapped to a different chr (mapQ&gt;=5)</pre>
 
-</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-3">
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-4">
 
 <pre >## BamQC report
 ## -----------------------------------
@@ -3337,7 +4366,7 @@ ul.task-list{list-style: none;}
 ##      number of mapped bases = 30,019,458,809 bp
 ##      number of sequenced bases = 6,217,039,734 bp</pre>
 
-</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-4">
+</article></slide><slide class=""><hgroup><h2>4. Reference mapping of reads to host genome</h2></hgroup><article  id="reference-mapping-of-reads-to-host-genome-5">
 
 <pre >## 23636698 reads; of these:
 ##   23636698 (100.00%) were paired; of these:
@@ -3359,7 +4388,7 @@ ul.task-list{list-style: none;}
 
 <ul>
 <li><p>After mapping the reads to the host genome (remove unnecessary reads), we can use the samtools <code>flag</code> command to extract unmapped reads. In our case, we are interested in the unmapped reads, as these may contain virus reads and subsequent virus sequences.</p></li>
-<li><p>Steps: 1) Gather the unmapped reads with the soomtools <code>flagstats</code> command 2) convert the <code>.BAM</code> file to <code>fastq</code>.</p></li>
+<li><p>Steps: <strong>1)</strong> Gather the unmapped reads with the soomtools <code>flagstats</code> command <strong>2)</strong> convert the <code>.BAM</code> file to <code>fastq</code>.</p></li>
 <li><p>I was able to use both tools (bedtools and samtools) to generate fastq files from the <code>.BAM</code> file. Below are the documents submitted to OSCER:</p></li>
 </ul>
 
@@ -3402,13 +4431,3729 @@ ul.task-list{list-style: none;}
 ## L75                         6846       
 ## # N&#39;s per 100 kbp           36.15</pre>
 
-</article></slide><slide class=""><hgroup><h2>7. Create a database of viruses for nucleotide blast</h2></hgroup><article  id="create-a-database-of-viruses-for-nucleotide-blast">
+</article></slide><slide class=""><hgroup><h2>7. Create a database of viruses for blast searches</h2></hgroup><article  id="create-a-database-of-viruses-for-blast-searches">
+
+<pre class = 'prettyprint lang-bach'>update_blastdb.pl --decompress nt_viruses</pre>
+
+<p>Here is the taxon ID for viruses 10239. I was able to generate a link from the Uniprotkb website that will download all of the protein sequences using the link (rather than downloading manually).</p>
+
+<p>Below I have included my files for OSCER submission:</p>
+
+<ol>
+<li><p><strong><a href='scripts/protein_db_download.sh' title=''>.sh script</a></strong></p></li>
+<li><p><strong><a href='scripts/protein_db_download.sbatch' title=''>.sbatch file</a></strong></p></li>
+</ol>
+
+<p>Here is the command for building the database. This step is critical as it will generate the <code>.dmnd</code> formatted file.</p>
+
+<pre class = 'prettyprint lang-bach'>diamond makedb --in /scratch/biol726310/BIOL7263_Genomics/rrv_project/databases/protein_db/all_virus_protein -d /scratch/biol726310/BIOL7263_Genomics/rrv_project/databases/protein_db/virus_protein_db</pre>
 
 </article></slide><slide class=""><hgroup><h2>8. Use Diamond for nucleotide-to-protein blasting</h2></hgroup><article  id="use-diamond-for-nucleotide-to-protein-blasting">
 
+<p>Below I have included my files for OSCER submission:</p>
+
+<ol>
+<li><p><strong><a href='scripts/nt_protein_blast.sh' title=''>.sh script</a></strong></p></li>
+<li><p><strong><a href='scripts/nt_protein_blast.sbatch' title=''>.sbatch file</a></strong></p></li>
+</ol>
+
+<ul>
+<li>This script contains code for both the nucleotide and protein blast. This will run each of the searches at the same time. Additionally, the code has been created to output <code>.csv</code> file, which will become more important in the following step.</li>
+</ul>
+
 </article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads">
 
-<p>(Hisat2 which is best used for RNA onto DNA: think about exons)</p></article></slide>
+<ul>
+<li>Using R, we manipulated the input <code>.csv</code> file to make it more user friendly, and to include important sequencing results.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-1">
+
+<p><img src="data:image/png;base64,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" width="720" style="display: block; margin: auto;" /></p>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-2">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Arranging by LENGTH
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.05225
+
+</td>
+
+<td style="text-align:right;">
+
+33.3
+
+</td>
+
+<td style="text-align:right;">
+
+188
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Acanthamoeba polyphaga moumouvirus
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.05225
+
+</td>
+
+<td style="text-align:right;">
+
+30.9
+
+</td>
+
+<td style="text-align:right;">
+
+155
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Saudi moumouvirus
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.05225
+
+</td>
+
+<td style="text-align:right;">
+
+30.9
+
+</td>
+
+<td style="text-align:right;">
+
+155
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Moumouvirus Monve
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.05225
+
+</td>
+
+<td style="text-align:right;">
+
+30.9
+
+</td>
+
+<td style="text-align:right;">
+
+155
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Moumouvirus australiensis
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.05225
+
+</td>
+
+<td style="text-align:right;">
+
+33.8
+
+</td>
+
+<td style="text-align:right;">
+
+117
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Aedes aegypti To virus 2
+
+</td>
+
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+5832
+
+</td>
+
+<td style="text-align:right;">
+
+16.36256
+
+</td>
+
+<td style="text-align:right;">
+
+30.1
+
+</td>
+
+<td style="text-align:right;">
+
+296
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Lampyris noctiluca errantivirus 1
+
+</td>
+
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+5832
+
+</td>
+
+<td style="text-align:right;">
+
+16.36256
+
+</td>
+
+<td style="text-align:right;">
+
+30.7
+
+</td>
+
+<td style="text-align:right;">
+
+282
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Aedes aegypti To virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+5832
+
+</td>
+
+<td style="text-align:right;">
+
+16.36256
+
+</td>
+
+<td style="text-align:right;">
+
+29.6
+
+</td>
+
+<td style="text-align:right;">
+
+267
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Chibugado virus
+
+</td>
+
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+5832
+
+</td>
+
+<td style="text-align:right;">
+
+16.36256
+
+</td>
+
+<td style="text-align:right;">
+
+27.0
+
+</td>
+
+<td style="text-align:right;">
+
+306
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Ceratitis capitata metavirus 2
+
+</td>
+
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+5832
+
+</td>
+
+<td style="text-align:right;">
+
+16.36256
+
+</td>
+
+<td style="text-align:right;">
+
+29.4
+
+</td>
+
+<td style="text-align:right;">
+
+290
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-3">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Arranging by COV
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Hokovirus HKV1
+
+</td>
+
+<td style="text-align:right;">
+
+1770
+
+</td>
+
+<td style="text-align:right;">
+
+1418
+
+</td>
+
+<td style="text-align:right;">
+
+435.1115
+
+</td>
+
+<td style="text-align:right;">
+
+93.3
+
+</td>
+
+<td style="text-align:right;">
+
+15
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Bovine viral diarrhea virus 2
+
+</td>
+
+<td style="text-align:right;">
+
+1770
+
+</td>
+
+<td style="text-align:right;">
+
+1418
+
+</td>
+
+<td style="text-align:right;">
+
+435.1115
+
+</td>
+
+<td style="text-align:right;">
+
+83.1
+
+</td>
+
+<td style="text-align:right;">
+
+29
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Bovine viral diarrhea virus 2
+
+</td>
+
+<td style="text-align:right;">
+
+1770
+
+</td>
+
+<td style="text-align:right;">
+
+1418
+
+</td>
+
+<td style="text-align:right;">
+
+435.1115
+
+</td>
+
+<td style="text-align:right;">
+
+91.9
+
+</td>
+
+<td style="text-align:right;">
+
+14
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Bovine viral diarrhea virus
+
+</td>
+
+<td style="text-align:right;">
+
+1770
+
+</td>
+
+<td style="text-align:right;">
+
+1418
+
+</td>
+
+<td style="text-align:right;">
+
+435.1115
+
+</td>
+
+<td style="text-align:right;">
+
+91.5
+
+</td>
+
+<td style="text-align:right;">
+
+15
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Bovine viral diarrhea virus 2
+
+</td>
+
+<td style="text-align:right;">
+
+1770
+
+</td>
+
+<td style="text-align:right;">
+
+1418
+
+</td>
+
+<td style="text-align:right;">
+
+435.1115
+
+</td>
+
+<td style="text-align:right;">
+
+92.0
+
+</td>
+
+<td style="text-align:right;">
+
+13
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Megaviridae environmental sample
+
+</td>
+
+<td style="text-align:right;">
+
+1679
+
+</td>
+
+<td style="text-align:right;">
+
+1450
+
+</td>
+
+<td style="text-align:right;">
+
+382.6333
+
+</td>
+
+<td style="text-align:right;">
+
+54.5
+
+</td>
+
+<td style="text-align:right;">
+
+20
+
+</td>
+
+<td style="text-align:right;">
+
+0.000114
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Dishui lake phycodnavirus 1
+
+</td>
+
+<td style="text-align:right;">
+
+3664
+
+</td>
+
+<td style="text-align:right;">
+
+977
+
+</td>
+
+<td style="text-align:right;">
+
+314.6836
+
+</td>
+
+<td style="text-align:right;">
+
+86.8
+
+</td>
+
+<td style="text-align:right;">
+
+18
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Sylvanvirus sp
+
+</td>
+
+<td style="text-align:right;">
+
+3664
+
+</td>
+
+<td style="text-align:right;">
+
+977
+
+</td>
+
+<td style="text-align:right;">
+
+314.6836
+
+</td>
+
+<td style="text-align:right;">
+
+72.5
+
+</td>
+
+<td style="text-align:right;">
+
+36
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Manila clam xenomavirus
+
+</td>
+
+<td style="text-align:right;">
+
+3664
+
+</td>
+
+<td style="text-align:right;">
+
+977
+
+</td>
+
+<td style="text-align:right;">
+
+314.6836
+
+</td>
+
+<td style="text-align:right;">
+
+57.0
+
+</td>
+
+<td style="text-align:right;">
+
+50
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Marseillevirus LCMAC102
+
+</td>
+
+<td style="text-align:right;">
+
+3664
+
+</td>
+
+<td style="text-align:right;">
+
+977
+
+</td>
+
+<td style="text-align:right;">
+
+314.6836
+
+</td>
+
+<td style="text-align:right;">
+
+53.0
+
+</td>
+
+<td style="text-align:right;">
+
+51
+
+</td>
+
+<td style="text-align:right;">
+
+0.000000
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-4">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Arranging by Percent_ID
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+1222
+
+</td>
+
+<td style="text-align:right;">
+
+1687
+
+</td>
+
+<td style="text-align:right;">
+
+29.425031
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2018
+
+</td>
+
+<td style="text-align:right;">
+
+1336
+
+</td>
+
+<td style="text-align:right;">
+
+133.779097
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2785
+
+</td>
+
+<td style="text-align:right;">
+
+1138
+
+</td>
+
+<td style="text-align:right;">
+
+10.477934
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Escherichia phage TR2
+
+</td>
+
+<td style="text-align:right;">
+
+13394
+
+</td>
+
+<td style="text-align:right;">
+
+466
+
+</td>
+
+<td style="text-align:right;">
+
+2.633588
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18543
+
+</td>
+
+<td style="text-align:right;">
+
+388
+
+</td>
+
+<td style="text-align:right;">
+
+3.387302
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18607
+
+</td>
+
+<td style="text-align:right;">
+
+387
+
+</td>
+
+<td style="text-align:right;">
+
+4.152866
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-5">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Arranging by Mismatch
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+1222
+
+</td>
+
+<td style="text-align:right;">
+
+1687
+
+</td>
+
+<td style="text-align:right;">
+
+29.425031
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2018
+
+</td>
+
+<td style="text-align:right;">
+
+1336
+
+</td>
+
+<td style="text-align:right;">
+
+133.779097
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2785
+
+</td>
+
+<td style="text-align:right;">
+
+1138
+
+</td>
+
+<td style="text-align:right;">
+
+10.477934
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Escherichia phage TR2
+
+</td>
+
+<td style="text-align:right;">
+
+13394
+
+</td>
+
+<td style="text-align:right;">
+
+466
+
+</td>
+
+<td style="text-align:right;">
+
+2.633588
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18543
+
+</td>
+
+<td style="text-align:right;">
+
+388
+
+</td>
+
+<td style="text-align:right;">
+
+3.387302
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18607
+
+</td>
+
+<td style="text-align:right;">
+
+387
+
+</td>
+
+<td style="text-align:right;">
+
+4.152866
+
+</td>
+
+<td style="text-align:right;">
+
+100
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-6">
+
+<p>We can filter by a specific observations. This is a very useful tool, as we can obtain all of the nodes (contigs) that correspond to a given virus or other organism.</p>
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Filtering by RoPV
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+1222
+
+</td>
+
+<td style="text-align:right;">
+
+1687
+
+</td>
+
+<td style="text-align:right;">
+
+29.425031
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18543
+
+</td>
+
+<td style="text-align:right;">
+
+388
+
+</td>
+
+<td style="text-align:right;">
+
+3.387302
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+18607
+
+</td>
+
+<td style="text-align:right;">
+
+387
+
+</td>
+
+<td style="text-align:right;">
+
+4.152866
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+29377
+
+</td>
+
+<td style="text-align:right;">
+
+300
+
+</td>
+
+<td style="text-align:right;">
+
+2.709251
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+37931
+
+</td>
+
+<td style="text-align:right;">
+
+267
+
+</td>
+
+<td style="text-align:right;">
+
+3.876289
+
+</td>
+
+<td style="text-align:right;">
+
+97.7
+
+</td>
+
+<td style="text-align:right;">
+
+2
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose partitivirus
+
+</td>
+
+<td style="text-align:right;">
+
+43976
+
+</td>
+
+<td style="text-align:right;">
+
+249
+
+</td>
+
+<td style="text-align:right;">
+
+1.750000
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-7">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Filtering by RCV-1
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+99.4
+
+</td>
+
+<td style="text-align:right;">
+
+2
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+99.7
+
+</td>
+
+<td style="text-align:right;">
+
+1
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+1952
+
+</td>
+
+<td style="text-align:right;">
+
+1351
+
+</td>
+
+<td style="text-align:right;">
+
+81.942097
+
+</td>
+
+<td style="text-align:right;">
+
+99.5
+
+</td>
+
+<td style="text-align:right;">
+
+1
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2018
+
+</td>
+
+<td style="text-align:right;">
+
+1336
+
+</td>
+
+<td style="text-align:right;">
+
+133.779097
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2018
+
+</td>
+
+<td style="text-align:right;">
+
+1336
+
+</td>
+
+<td style="text-align:right;">
+
+133.779097
+
+</td>
+
+<td style="text-align:right;">
+
+99.1
+
+</td>
+
+<td style="text-align:right;">
+
+2
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2785
+
+</td>
+
+<td style="text-align:right;">
+
+1138
+
+</td>
+
+<td style="text-align:right;">
+
+10.477934
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2785
+
+</td>
+
+<td style="text-align:right;">
+
+1138
+
+</td>
+
+<td style="text-align:right;">
+
+10.477934
+
+</td>
+
+<td style="text-align:right;">
+
+99.7
+
+</td>
+
+<td style="text-align:right;">
+
+1
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+2785
+
+</td>
+
+<td style="text-align:right;">
+
+1138
+
+</td>
+
+<td style="text-align:right;">
+
+10.477934
+
+</td>
+
+<td style="text-align:right;">
+
+98.2
+
+</td>
+
+<td style="text-align:right;">
+
+5
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OS=Rose cryptic virus 1
+
+</td>
+
+<td style="text-align:right;">
+
+15249
+
+</td>
+
+<td style="text-align:right;">
+
+432
+
+</td>
+
+<td style="text-align:right;">
+
+8.384401
+
+</td>
+
+<td style="text-align:right;">
+
+100.0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</article></slide><slide class=""><hgroup><h2>9. Evaluate results of unmapped reads</h2></hgroup><article  id="evaluate-results-of-unmapped-reads-8">
+
+<table class="table" style="font-size: 10px; color: black; margin-left: auto; margin-right: auto;">
+
+<caption style="font-size: initial !important;">
+
+Filtering by NA’s
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Seq_Title_Org
+
+</th>
+
+<th style="text-align:right;">
+
+NODE
+
+</th>
+
+<th style="text-align:right;">
+
+LENGTH
+
+</th>
+
+<th style="text-align:right;">
+
+COV
+
+</th>
+
+<th style="text-align:right;">
+
+Percent_ID
+
+</th>
+
+<th style="text-align:right;">
+
+Mismatch
+
+</th>
+
+<th style="text-align:right;">
+
+Evalue
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+6217
+
+</td>
+
+<td style="text-align:right;">
+
+14.052246
+
+</td>
+
+<td style="text-align:right;">
+
+33.3
+
+</td>
+
+<td style="text-align:right;">
+
+188
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+20
+
+</td>
+
+<td style="text-align:right;">
+
+5681
+
+</td>
+
+<td style="text-align:right;">
+
+14.309914
+
+</td>
+
+<td style="text-align:right;">
+
+33.3
+
+</td>
+
+<td style="text-align:right;">
+
+188
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+25
+
+</td>
+
+<td style="text-align:right;">
+
+5377
+
+</td>
+
+<td style="text-align:right;">
+
+12.118024
+
+</td>
+
+<td style="text-align:right;">
+
+37.9
+
+</td>
+
+<td style="text-align:right;">
+
+128
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+41
+
+</td>
+
+<td style="text-align:right;">
+
+4949
+
+</td>
+
+<td style="text-align:right;">
+
+12.783634
+
+</td>
+
+<td style="text-align:right;">
+
+37.4
+
+</td>
+
+<td style="text-align:right;">
+
+182
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+56
+
+</td>
+
+<td style="text-align:right;">
+
+4578
+
+</td>
+
+<td style="text-align:right;">
+
+8.661043
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+98
+
+</td>
+
+<td style="text-align:right;">
+
+297
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+68
+
+</td>
+
+<td style="text-align:right;">
+
+4242
+
+</td>
+
+<td style="text-align:right;">
+
+8.828256
+
+</td>
+
+<td style="text-align:right;">
+
+33.8
+
+</td>
+
+<td style="text-align:right;">
+
+182
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+101
+
+</td>
+
+<td style="text-align:right;">
+
+3888
+
+</td>
+
+<td style="text-align:right;">
+
+16.414155
+
+</td>
+
+<td style="text-align:right;">
+
+43.5
+
+</td>
+
+<td style="text-align:right;">
+
+156
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+135
+
+</td>
+
+<td style="text-align:right;">
+
+3636
+
+</td>
+
+<td style="text-align:right;">
+
+34.223407
+
+</td>
+
+<td style="text-align:right;">
+
+34.8
+
+</td>
+
+<td style="text-align:right;">
+
+179
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+135
+
+</td>
+
+<td style="text-align:right;">
+
+3636
+
+</td>
+
+<td style="text-align:right;">
+
+34.223407
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+274
+
+</td>
+
+<td style="text-align:right;">
+
+1707
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+150
+
+</td>
+
+<td style="text-align:right;">
+
+3572
+
+</td>
+
+<td style="text-align:right;">
+
+39.972278
+
+</td>
+
+<td style="text-align:right;">
+
+38.4
+
+</td>
+
+<td style="text-align:right;">
+
+144
+
+</td>
+
+<td style="text-align:right;">
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table></article></slide>
 
 
   <slide class="backdrop"></slide>

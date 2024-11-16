@@ -44,24 +44,23 @@ squeue -u biol726310
 ## Preliminary steps
 
 - We can start by creating all of the directories needed throughout the downstream process.
-  1. Raw SRA data
-  2. Reference genomes
-  3. Trimming
-  4. Alignment (BWA or hisat2)
-  5. Gathering unmapped reads
-  6. Do novo assembly
+
+- We can also create the scripts with generic names. For examples, we can simple call a sample `sample_1_1.fastq` and `sample_1_2.fastq`. This can be repeated for each sample being processed. This will keep things in a very simple way.
 
 ```bach
-mkdir raw_data
-mkdir reference_seq
-mkdir trimmed_reads
 mmkdir alignment_data
-mkdir unmapped_reads
 mkdir assembly_data
+mkdir databases
+mkdir databases/protein_db
+mkdir databases/nucleotide_db
+mkdir reference_seq
+mkdir scripts
+mkdir trimmed_reads
+mkdir unmapped_reads
+mkdir raw_data
 ```
 
 - As a reminder, we may have to change environments throughout the process.
-
 
 ## Pulling data from the SRA
 
@@ -73,9 +72,7 @@ Below are the files submitted to OSCER:
 
 3) **[.args](array_scripts/fastq_dump.args)**
 
-
 > DONE!
-
 
 ## Obtaining a reference genome (*Rosa*)
 
@@ -167,21 +164,25 @@ I was able to use both tools (bedtools and samtools) to generate fastq files. Be
 
 ## Assembly of unmapped reads (rnaSPADES)
 
-1) **[sh script](array_scripts/)**
+1) **[sh script](array_scripts/assembly_array.sh)**
 
-2) **[sbatch file](array_scripts/)**
+2) **[sbatch file](array_scripts/assembly_array.sbatch)**
 
-3) **[.args](array_scripts/)**
+3) **[.args](array_scripts/assembly_array.args)**
 
-> Incomplete
+> DONE!
 
-## Constructing databases for BLASTn and Diamond
+## Downloading sequence data for Diamond and BLASTn searches
 
-1) **[.sh script](array_scripts/)** 
+1) **[.sh script](array_scripts/)**
 
 2) **[.sbatch file](array_scripts/)**
 
 3) **[.args](array_scripts/)**
+
+> The download process is working with our current script using the web link. I changed the output location to the protein_db folder so now that would work well. If this works, I will then attempt to download the nucleotide as a seperate link of code but within the same script.
+
+## Constructing the protein and nucleotide databases
 
 I may have to use the `mkdb` commands separately.
 
@@ -195,15 +196,37 @@ I may have to use the `mkdb` commands separately.
 
 3) **[.args](array_scripts/)**
 
+> I will set the search parameter to 3 search per node (to reduce computational requirements)
 > Incomplete
 
-## Analyze BLAST results for both nucleotide and protein blast
+## Analyze BLAST results for both protein and nucleotide blast
 
 This portion of the analysis can be performed in R.
 
 > Incomplete
 
+> We need to check the number of NA's that are found in the searches and what these NA's are.
+> We can also filter by e.value to remove low value (low probability) matches
+
 I am thinking that I can add a new column (sample or something) so that I can generate an excel with all of the data in one file. This will be useful because I can filter by sample if I would like to. This will make analysis highly throughput.
+
+
+## Pfam?
+
+I may try to use the pfam database (as described in the early portion of this course). This may be useful for the NA's sequences to see if there are any highly conserved protein regions that are of interest.
+
+
+## Extracting relevant nodes/contigs
+
+
+
+
+
+
+
+
+
+
 
 
 

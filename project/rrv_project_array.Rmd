@@ -7,6 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tidyverse)
+library(patchwork)
 ```
 
 ## Overview
@@ -50,6 +53,7 @@ squeue -u biol726310
 ```bach
 mmkdir alignment_data
 mkdir assembly_data
+mkdir blast_results
 mkdir databases
 mkdir databases/protein_db
 mkdir databases/nucleotide_db
@@ -172,36 +176,66 @@ I was able to use both tools (bedtools and samtools) to generate fastq files. Be
 
 > DONE!
 
-## Downloading sequence data for Diamond and BLASTn searches
+## Downloading sequence data for Diamond searches and constructing the database
 
-1) **[.sh script](array_scripts/)**
+- I was able to incorporate the `mkdb` command as a separate line after pulling the protein sequence data. This puts everything into one script.
 
-2) **[.sbatch file](array_scripts/)**
+1) **[.sh script](array_scripts/protein_db_download.sh)**
 
-3) **[.args](array_scripts/)**
+2) **[.sbatch file](array_scripts/protein_db_download.sbatch)**
 
-> The download process is working with our current script using the web link. I changed the output location to the protein_db folder so now that would work well. If this works, I will then attempt to download the nucleotide as a seperate link of code but within the same script.
+> DONE!
 
-## Constructing the protein and nucleotide databases
+## Downloading sequence data for BLASTn searches and constructing the database
 
-I may have to use the `mkdb` commands separately.
+- I was able to incorporate the `makeblastdb` command as a separate line after pulling the nucleotide sequence data. This puts everything into one script.
 
-> Incomplete
+1) **[.sh script](array_scripts/nucleotide_db_download.sh)**
+
+2) **[.sbatch file](array_scripts/nucleotide_db_download.sh)**
+
+- The command in this script appears to also construct the BLAST database, and no additional database making is required. We can simply begin our blast search.
+
+- The blasting is still acting weird when trying to pull data from the nt_viruses folders. I may have to use the tar command to decompress all the files.
+
+```
+for file in nt_viruses.*.tar.gz; do
+    tar -xzvf "$file"
+done
+```
 
 ## Blasting
 
-1) **[.sh script](array_scripts/)** 
+1) **[.sh script](array_scripts/protein_nt_blasting.sh)** 
 
-2) **[.sbatch file](array_scripts/)**
+2) **[.sbatch file](array_scripts/protein_nt_blasting.sbatch)**
 
-3) **[.args](array_scripts/)**
+3) **[.args](array_scripts/protein_nt_blasting.args)**
 
-> I will set the search parameter to 3 search per node (to reduce computational requirements)
-> Incomplete
+- This command threw an error, but it seems that all of the blast stuff worked! 
+
+> DONE!
 
 ## Analyze BLAST results for both protein and nucleotide blast
 
 This portion of the analysis can be performed in R.
+
+
+```{r}
+df_1 <- read.csv("data_output/array_blast/nt_results_1.csv", header = FALSE)
+
+colnames(df_1) <- c("NODE_Info","Query_ID","Seq_Title", "Percent_ID", "Align_Length", "Mismatch", "Gap_Open", "Query_Start", "Query_End", "Seq_Start","Send", "Evalue", "bitscore")
+
+df_split <- df_1 %>% 
+  mutate(NODE = str_extract(NODE_Info,"NODE_[0-9]+"),
+         LENGTH = 
+str_extract(Query_ID, "length_[0-9]+"),
+         COV = 
+str_extract(Query_ID, "cov_[0-9]+\\.[0-9]+"))
+```
+
+
+
 
 > Incomplete
 
@@ -211,6 +245,26 @@ This portion of the analysis can be performed in R.
 I am thinking that I can add a new column (sample or something) so that I can generate an excel with all of the data in one file. This will be useful because I can filter by sample if I would like to. This will make analysis highly throughput.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Pfam?
 
 I may try to use the pfam database (as described in the early portion of this course). This may be useful for the NA's sequences to see if there are any highly conserved protein regions that are of interest.
@@ -218,8 +272,46 @@ I may try to use the pfam database (as described in the early portion of this co
 
 ## Extracting relevant nodes/contigs
 
+- EXAMPLE CODE
+```{r}
+library(Biostrings)
+library(stringr)
+library(tidyverse)
+# Read the transcript FASTA file
+fasta_file <- "data_output/transcripts.fasta"
+transcripts <- readDNAStringSet(fasta_file)
+
+# View the sequence IDs (headers)
+transcript_ids <- names(transcripts)
+head(transcript_ids)
 
 
+# Extract unique IDs from the first column
+nodes_of_interest <- unique(blast_results$V1)  # Adjust column number if needed
+head(nodes_of_interest)
+
+# Filter sequences based on nodes of interest
+filtered_sequences <- transcripts[transcript_ids %in% nodes_of_interest]
+
+# View filtered sequences
+print(filtered_sequences)
+
+# Write filtered sequences to a new FASTA file
+output_file <- "filtered_transcripts.fasta"
+writeXStringSet(filtered_sequences, filepath = output_file)
+```
+
+May have to separate the node portion
+
+
+```{r}
+# Extract the node name (assumes header format NODE_x_length_y_cov_z)
+parsed_ids <- str_extract(transcript_ids, "NODE_\\d+")
+head(parsed_ids)
+
+# Filter using partial match
+filtered_sequences <- transcripts[parsed_ids %in% nodes_of_interest]
+```
 
 
 

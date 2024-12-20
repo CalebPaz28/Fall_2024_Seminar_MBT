@@ -683,9 +683,9 @@ plot_5 <- df_complete %>% ggplot(aes(x = Mismatch))+
 We can filter by a specific observations. This is a very useful tool, as we can obtain all of the nodes (contigs) that correspond to a given virus or other organism.
 
 ```{r}
-df_complete %>% filter(Seq_Title_Org == "OS=Rose partitivirus ") ## Because of the manipulations 
+df_complete %>% filter(Seq_Title_Org == "OS=Rose partitivirus ") ## Because of the manipulations
 
-df_complete %>% filter(Seq_Title_Org == "OS=Rose cryptic virus 1 ") ## Because of the manipulations 
+df_complete %>% filter(Seq_Title_Org == "OS=Rose cryptic virus 1 ") ## Because of the manipulations
 ```
 
 We can reduce the data set so that we can easily manage the analysis of the different sequence hits. In this case, we reduced the data set to one sequence hit per node (using the percent identity as a variable that would dictate the selection of a specific node). Obviously, we could have this from the start when doing the initial diamond blast, but its nice to also see some of the other items that could possibly have homologous sequences.
@@ -750,9 +750,13 @@ new_df %>% ggplot(aes(x = Value, y = Parameter, fill = Parameter))+
 ```
 
 
-
 *___________________________________________________________________________________________________*
 
+### **Conclusions**
+
+The focus of this work was to analyze HTS data that was publicly available and to mine for viruses that were present in the samples, but had not been specifically investigated. For example, studies on gene expression to various environmental stimuli. It was a general expectation that viruses would be identified, but it was assumed that this would occur when analyzing a larger set of samples. Additionally, it was assumed that viruses would be detected, but they would likely be viruses that had previously been reported from the same region where the study was performed.
+
+  In this project, one HTS sample (paired read data) from a study done in China was analyzed, which produced several virus contigs with acceptable coverage, percent identity, and contig length. In particular, one virus (Rose cryptic virus 1 or RCV-1), was detected from the HTS sample analyzed. This was an entirely unexpected result, in the respect that RCV-1 had not previously been reported in the literature from China. Thankfully, RCV-1 has a commensalistic relationship with its host (in most known cases) and is therefore not of significant concern for the local rose growers. By extrapolation, this method is very useful in revealing viruses which are known to have a detrimental effect on their host, but have not been reported in a given region. This was a very useful method, and is something that can continually be pursued in the coming months-years. Not only is this method beneficial for the characterization of known viruses, but this may aid in the discovery of novel, previously undetected viruses.
 
 
 

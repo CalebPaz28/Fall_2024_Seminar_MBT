@@ -1,0 +1,427 @@
+NODE_857_length_1732_cov_5.027728_g578_i0,Papaya mosaic virus isolate PaMVs1, partial genome,95.522,67,2,1,93,158,50,116,3.96e-18,106
+NODE_857_length_1732_cov_5.027728_g578_i0,Turnip mosaic virus isolate NSW3, complete genome,100.000,53,0,0,106,158,9752,9804,6.63e-16,99.0
+NODE_896_length_1706_cov_27.439682_g598_i0,Rose partitivirus isolate PB segment dsRNA2, complete sequence,98.535,1706,25,0,1,1706,1780,75,0.0,3013
+NODE_896_length_1706_cov_27.439682_g598_i0,Rose partitivirus segment RNA2, complete sequence,98.535,1706,25,0,1,1706,1780,75,0.0,3013
+NODE_896_length_1706_cov_27.439682_g598_i0,Pear alphapartitivirus gene for capsid protein, complete cds, segment: dsRNA2,71.770,1548,351,70,1,1505,1781,277,2.71e-94,359
+NODE_1276_length_1478_cov_8.195730_g870_i0,Rose cryptic virus 1 isolate LS13S9 segment RNA1 RNA-dependent RNA polymerase gene, complete cds,100.000,1478,0,0,1,1478,45,1522,0.0,2730
+NODE_1276_length_1478_cov_8.195730_g870_i0,Rose cryptic virus 1 segment dsRNA1 RNA-dependent RNA polymerase gene, complete cds,100.000,1478,0,0,1,1478,119,1596,0.0,2730
+NODE_1276_length_1478_cov_8.195730_g870_i0,Rosa multiflora cryptic virus segment dsRNA1, complete sequence,100.000,1478,0,0,1,1478,119,1596,0.0,2730
+NODE_1276_length_1478_cov_8.195730_g870_i0,Rose cryptic virus 1 RNA 1, complete sequence,99.662,1478,5,0,1,1478,120,1597,0.0,2702
+NODE_1276_length_1478_cov_8.195730_g870_i0,Rose cryptic virus 1 isolate ShB-1 segment dsRNA1, complete sequence,99.662,1478,5,0,1,1478,120,1597,0.0,2702
+NODE_1472_length_1395_cov_36.706505_g1015_i0,Marseillevirus marseillevirus strain T19, complete genome,86.139,101,14,0,169,269,199518,199418,2.46e-19,110
+NODE_1472_length_1395_cov_36.706505_g1015_i0,Marseillevirus marseillevirus strain T19, complete genome,86.139,101,14,0,169,269,199518,199418,2.46e-19,110
+NODE_1472_length_1395_cov_36.706505_g1015_i0,Marseillevirus sp. strain Vienna, complete genome,78.107,169,31,6,101,266,170985,170820,4.11e-17,102
+NODE_1486_length_1387_cov_64.474886_g1027_i0,Rose cryptic virus 1 segment dsRNA2 hypothetical protein gene, complete cds,100.000,1387,0,0,1,1387,21,1407,0.0,2562
+NODE_1486_length_1387_cov_64.474886_g1027_i0,Rose cryptic virus 1 RNA 2, complete sequence,99.856,1387,2,0,1,1387,21,1407,0.0,2551
+NODE_1486_length_1387_cov_64.474886_g1027_i0,Rose cryptic virus 1 isolate ShB-1 segment dsRNA2, complete sequence,99.856,1387,2,0,1,1387,21,1407,0.0,2551
+NODE_1486_length_1387_cov_64.474886_g1027_i0,Rose cryptic virus 1 isolate LS13S9 segment RNA2 putative coat protein gene, complete cds,99.712,1387,2,2,1,1385,26,1412,0.0,2538
+NODE_1486_length_1387_cov_64.474886_g1027_i0,Rosa multiflora cryptic virus segment dsRNA3, complete sequence,100.000,1340,0,0,1,1340,20,1359,0.0,2475
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 isolate LS13S9 segment RNA3 hypothetical protein gene, complete cds,100.000,1279,0,0,48,1326,136,1414,0.0,2362
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 isolate LS13S9 segment RNA3 hypothetical protein gene, complete cds,100.000,39,0,0,15,53,1,39,3.06e-08,73.1
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rosa multiflora cryptic virus segment dsRNA2, complete sequence,100.000,1279,0,0,48,1326,168,1446,0.0,2362
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rosa multiflora cryptic virus segment dsRNA2, complete sequence,98.148,54,0,1,1,53,18,71,2.35e-14,93.5
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 segment dsRNA3 hypothetical protein gene, complete cds,99.922,1279,1,0,48,1326,168,1446,0.0,2357
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 segment dsRNA3 hypothetical protein gene, complete cds,100.000,53,0,0,1,53,19,71,5.05e-16,99.0
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 RNA 3, complete sequence,99.844,1279,2,0,48,1326,168,1446,0.0,2351
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 RNA 3, complete sequence,100.000,53,0,0,1,53,19,71,5.05e-16,99.0
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 isolate ShB-1 segment dsRNA3, complete sequence,99.844,1279,2,0,48,1326,168,1446,0.0,2351
+NODE_1656_length_1328_cov_125.237450_g1142_i0,Rose cryptic virus 1 isolate ShB-1 segment dsRNA3, complete sequence,100.000,53,0,0,1,53,19,71,5.05e-16,99.0
+NODE_1973_length_1221_cov_2.882404_g1387_i0,Rose yellow vein virus isolate CAN, complete genome,84.071,226,34,2,137,361,4854,5078,1.23e-51,217
+NODE_1973_length_1221_cov_2.882404_g1387_i0,Rose yellow vein virus isolate TEK, complete genome,83.556,225,37,0,137,361,4854,5078,5.71e-50,211
+NODE_1973_length_1221_cov_2.882404_g1387_i0,Rose yellow vein virus isolate EDI, complete genome,83.556,225,37,0,137,361,4854,5078,5.71e-50,211
+NODE_1973_length_1221_cov_2.882404_g1387_i0,Rose yellow vein virus strain RYVV-MN1, complete genome,83.628,226,35,2,137,361,4854,5078,5.71e-50,211
+NODE_2312_length_1137_cov_46.031015_g1647_i0,MAG: Trachysalambria curvirostris nimavirus Ube2021 DNA, complete genome,80.090,221,40,4,382,600,72464,72682,5.42e-35,161
+NODE_2347_length_1129_cov_196.452652_g1674_i0,TPA_asm: Logan nepovirus segment RNA1 polyprotein gene, complete cds,81.648,267,49,0,194,460,7748,8014,2.43e-53,222
+NODE_2528_length_1091_cov_3.888016_g1817_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,92.886,492,35,0,600,1091,985,494,0.0,715
+NODE_2528_length_1091_cov_3.888016_g1817_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,88.423,596,46,19,20,604,1414,831,0.0,697
+NODE_2528_length_1091_cov_3.888016_g1817_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,84.178,493,76,2,600,1091,4205,4696,4.54e-130,477
+NODE_2528_length_1091_cov_3.888016_g1817_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,82.895,532,67,13,91,604,3834,4359,5.92e-124,457
+NODE_2528_length_1091_cov_3.888016_g1817_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,83.368,481,59,10,140,604,1,476,1.67e-114,425
+NODE_2528_length_1091_cov_3.888016_g1817_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,85.083,362,54,0,600,961,322,683,7.93e-98,370
+NODE_2528_length_1091_cov_3.888016_g1817_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,84.328,268,40,2,825,1091,717,983,4.98e-65,261
+NODE_2528_length_1091_cov_3.888016_g1817_i0,MAG: Ripapog virus isolate KCAP3_k141_289454 genomic sequence,87.937,315,34,3,741,1053,1030,1342,2.85e-97,368
+NODE_2528_length_1091_cov_3.888016_g1817_i0,MAG: Ripaglys virus isolate KCAP2_k141_358354 genomic sequence,81.452,372,50,17,600,961,419,57,8.21e-73,287
+NODE_2528_length_1091_cov_3.888016_g1817_i0,MAG: Ripaglys virus isolate KCAP2_k141_358354 genomic sequence,81.308,321,41,9,299,604,581,265,1.80e-59,243
+NODE_2974_length_1013_cov_51.294681_g1647_i1,MAG: Trachysalambria curvirostris nimavirus Ube2021 DNA, complete genome,80.090,221,40,4,747,965,72464,72682,4.81e-35,161
+NODE_3205_length_974_cov_3.975583_g2378_i0,Chain U, chr17.trna16-GlnTTG,84.722,72,11,0,447,518,1,72,2.23e-08,73.1
+NODE_3441_length_939_cov_3.387991_g2580_i0,Chain U, chr17.trna16-GlnTTG,86.111,72,10,0,582,653,1,72,4.61e-10,78.7
+NODE_3589_length_918_cov_18.072189_g2709_i0,Prunus necrotic ringspot virus isolate Q15R3N segment RNA3, complete sequence,93.151,146,10,0,622,767,1,146,3.29e-51,215
+NODE_4386_length_828_cov_4.471523_g3411_i0,Rose partitivirus isolate PB segment dsRNA1, complete sequence,98.913,828,9,0,1,828,1102,1929,0.0,1480
+NODE_4386_length_828_cov_4.471523_g3411_i0,Rose partitivirus segment RNA1, complete sequence,98.913,828,9,0,1,828,1102,1929,0.0,1480
+NODE_4386_length_828_cov_4.471523_g3411_i0,Rose partitivirus isolate Gyeongju RNA-dependent RNA polymerase gene, partial cds,98.525,746,11,0,1,746,1176,1921,0.0,1317
+NODE_4386_length_828_cov_4.471523_g3411_i0,Rose partitivirus RoPV-dsRNA1-Du-CNU1 genomic RNA, segment dsRNA1, complete sequence,80.184,762,140,11,1,757,1004,1759,3.29e-155,560
+NODE_4386_length_828_cov_4.471523_g3411_i0,Pear alphapartitivirus PpPV2-dsRNA1-Du-CNU1 genomic RNA, segment dsRNA1, complete sequence,80.184,762,140,11,1,757,1004,1759,3.29e-155,560
+NODE_4987_length_765_cov_3.702312_g3951_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,84.245,768,113,8,1,765,2090,2852,0.0,741
+NODE_4987_length_765_cov_3.702312_g3951_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,79.819,773,121,27,8,760,1005,248,2.38e-146,531
+NODE_4987_length_765_cov_3.702312_g3951_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,79.819,773,121,27,8,760,3067,2310,2.38e-146,531
+NODE_4987_length_765_cov_3.702312_g3951_i0,Stealth virus 1 clone 3B43, genomic sequence,79.666,659,97,28,3,647,1095,1730,3.18e-120,444
+NODE_4987_length_765_cov_3.702312_g3951_i0,MAG: Chrocadirk virus isolate CC1B_k141_10698 genomic sequence,78.450,645,105,27,120,756,679,61,4.21e-104,390
+NODE_5081_length_758_cov_3.963504_g4037_i0,Chain U, chr17.trna16-GlnTTG,86.111,72,10,0,401,472,1,72,3.68e-10,78.7
+NODE_6390_length_667_cov_1.427609_g5262_i0,Potato leafroll virus isolate 18-1145, complete genome,85.593,118,17,0,213,330,1,118,4.08e-24,124
+NODE_6390_length_667_cov_1.427609_g5262_i0,Potato leafroll virus isolate 18-1084, complete genome,85.593,118,17,0,213,330,1,118,4.08e-24,124
+NODE_6390_length_667_cov_1.427609_g5262_i0,Potato leafroll virus isolate 18-1157, complete genome,85.593,118,17,0,213,330,1,118,4.08e-24,124
+NODE_6390_length_667_cov_1.427609_g5262_i0,Potato leafroll virus isolate 18-1110, complete genome,85.593,118,17,0,213,330,1,118,4.08e-24,124
+NODE_6390_length_667_cov_1.427609_g5262_i0,Potato leafroll virus isolate 18-1083, complete genome,85.217,115,17,0,216,330,1,115,1.90e-22,119
+NODE_6636_length_652_cov_6.243523_g5504_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,93.578,654,38,4,1,652,2443,1792,0.0,972
+NODE_6636_length_652_cov_6.243523_g5504_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,85.888,659,86,6,1,652,654,1312,0.0,695
+NODE_6636_length_652_cov_6.243523_g5504_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,85.888,659,86,6,1,652,2716,3374,0.0,695
+NODE_6636_length_652_cov_6.243523_g5504_i0,MAG: Ripoflyv virus isolate KCAP1_k141_439794 genomic sequence,86.234,632,81,4,27,652,124,755,0.0,680
+NODE_6636_length_652_cov_6.243523_g5504_i0,Stealth virus 1 clone 3B43, genomic sequence,81.520,671,93,27,1,652,1452,794,2.60e-145,527
+NODE_7350_length_619_cov_3.598901_g6202_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctJYV16, partial genome,86.207,58,8,0,192,249,44270,44213,8.33e-06,63.9
+NODE_7562_length_610_cov_7.808194_g6412_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,88.707,611,64,3,1,606,4602,3992,0.0,741
+NODE_7562_length_610_cov_7.808194_g6412_i0,Stealth virus 1 clone 3B43, genomic sequence,81.410,624,92,20,1,610,3570,2957,1.14e-133,488
+NODE_7562_length_610_cov_7.808194_g6412_i0,Dickeya phage phiDP23.1 clone pD23.contig.39_1 genomic sequence,81.230,618,97,12,1,606,69,679,1.91e-131,481
+NODE_7562_length_610_cov_7.808194_g6412_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,81.230,618,97,12,1,606,1096,1706,1.91e-131,481
+NODE_7562_length_610_cov_7.808194_g6412_i0,Stealth virus 1 clone 3B43 T3,79.621,633,92,29,1,605,51,674,9.08e-115,425
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.837,49,3,1,217,264,4271,4223,6.06e-07,67.6
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.837,49,3,1,217,264,26711,26759,6.06e-07,67.6
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,225,270,4160,4115,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4166,4127,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4172,4133,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4178,4139,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4184,4145,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4190,4151,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4196,4157,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4202,4163,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4208,4169,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4214,4175,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4220,4181,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4226,4187,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4232,4193,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4238,4199,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4244,4205,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4250,4211,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,95.000,40,2,0,225,264,4256,4217,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26720,26765,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26726,26771,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26732,26777,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26738,26783,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26744,26789,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26750,26795,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26756,26801,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26762,26807,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26768,26813,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26774,26819,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26780,26825,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26786,26831,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26792,26837,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26798,26843,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26804,26849,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26810,26855,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Chelonid herpesvirus 5, partial genome,91.304,46,4,0,219,264,26816,26861,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,93.182,44,3,0,221,264,67800,67843,2.18e-06,65.8
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,93.182,44,3,0,221,264,134043,134000,2.18e-06,65.8
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,91.304,46,4,0,219,264,67804,67849,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,91.304,46,4,0,219,264,67810,67855,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,91.304,46,4,0,219,264,67816,67861,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,91.304,46,4,0,219,264,67822,67867,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,95.000,40,2,0,225,264,134033,133994,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Spilosoma obliqua nucleopolyhedrosis virus isolate IIPR, complete genome,95.000,40,2,0,221,260,134227,134188,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Pseudomonas phage Knedl, complete genome,87.719,57,6,1,209,264,11473,11417,2.18e-06,65.8
+NODE_8176_length_584_cov_8.367906_g7009_i0,Pseudomonas phage Knedl, complete genome,95.000,40,2,0,225,264,11450,11411,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Hyphantria cunea nucleopolyhedrovirus, complete genome,93.182,44,3,0,221,264,67229,67272,2.18e-06,65.8
+NODE_8176_length_584_cov_8.367906_g7009_i0,Hyphantria cunea nucleopolyhedrovirus, complete genome,91.304,46,4,0,219,264,67233,67278,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Hyphantria cunea nucleopolyhedrovirus, complete genome,91.304,46,4,0,219,264,67239,67284,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Hyphantria cunea nucleopolyhedrovirus, complete genome,91.304,46,4,0,219,264,67245,67290,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Hyphantria cunea nucleopolyhedrovirus, complete genome,91.304,46,4,0,219,264,67251,67296,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Nodularia phage vB_NspS-kac65v162, complete genome,100.000,34,0,0,225,258,57023,56990,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Nodularia phage vB_NspS-kac65v162, complete genome,95.000,40,2,0,225,264,57035,56996,7.83e-06,63.9
+NODE_8176_length_584_cov_8.367906_g7009_i0,Nodularia phage vB_NspS-kac65v162, complete genome,90.000,50,3,2,217,264,57051,57002,7.83e-06,63.9
+NODE_9361_length_542_cov_0.763326_g8180_i0,Pittosporum cryptic virus-1 RdRp gene for RNA dependent RNA polymerase, segment RNA1, isolate Pit-MAIB,92.432,370,28,0,127,496,1967,1598,5.93e-146,529
+NODE_9361_length_542_cov_0.763326_g8180_i0,Ferraria betaflexivirus 1 isolate NL1-16, complete genome,97.959,49,1,0,448,496,1,49,1.54e-12,86.1
+NODE_9610_length_533_cov_11.245652_g8428_i0,MAG TPA_asm: Polyomavirus takifugu6963 isolate Polyoma6963 genomic sequence,97.368,38,0,1,269,305,3215,3178,7.11e-06,63.9
+NODE_10475_length_509_cov_4.087156_g9289_i0,Rose partitivirus isolate PB segment dsRNA1, complete sequence,99.804,509,1,0,1,509,553,45,0.0,935
+NODE_10475_length_509_cov_4.087156_g9289_i0,Rose partitivirus segment RNA1, complete sequence,99.804,509,1,0,1,509,553,45,0.0,935
+NODE_10475_length_509_cov_4.087156_g9289_i0,Rose partitivirus isolate Gyeongju RNA-dependent RNA polymerase gene, partial cds,98.773,489,2,4,1,489,627,143,0.0,867
+NODE_10475_length_509_cov_4.087156_g9289_i0,MAG: Partitiviridae sp. isolate 248-k141_5206 putative RNA-dependent RNA polymerase gene, partial cds,82.087,508,81,9,7,509,669,167,7.49e-115,425
+NODE_10475_length_509_cov_4.087156_g9289_i0,Rose partitivirus RoPV-dsRNA1-Du-CNU1 genomic RNA, segment dsRNA1, complete sequence,81.678,453,77,5,7,456,450,1,9.89e-99,372
+NODE_10584_length_506_cov_1.870670_g9398_i0,Grapevine fabavirus isolate Shihezi-3 segment RNA2 polyprotein gene, complete cds,95.105,143,6,1,1,142,3,145,2.91e-54,224
+NODE_10584_length_506_cov_1.870670_g9398_i0,Beauveria bassiana partitivirus 5 strain RCEF 6874 coat protein gene, complete cds,88.514,148,12,4,122,267,1382,1526,2.98e-39,174
+NODE_10584_length_506_cov_1.870670_g9398_i0,MAG: Chronavilt virus isolate CN1A_k141_118239 genomic sequence,82.353,187,30,3,89,273,4060,3875,8.33e-35,159
+NODE_10584_length_506_cov_1.870670_g9398_i0,MAG: Cressdnaviricota sp. isolate ctcd46, complete genome,79.630,162,29,4,82,241,1825,1666,6.58e-21,113
+NODE_10584_length_506_cov_1.870670_g9398_i0,Uncultured marine virus clone SOG02701, complete genome,79.630,162,29,4,82,241,427,268,6.58e-21,113
+NODE_10646_length_504_cov_1.830626_g9460_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,88.427,337,32,5,170,504,1340,1009,4.49e-107,399
+NODE_10646_length_504_cov_1.830626_g9460_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,80.112,357,41,17,169,504,3834,4181,1.04e-58,239
+NODE_10646_length_504_cov_1.830626_g9460_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,80.656,305,34,14,218,504,1,298,6.28e-51,213
+NODE_11032_length_494_cov_1.073634_g9845_i0,White spot syndrome virus isolate WSSV_CIBA_002,85.366,287,38,4,2,285,183841,184126,2.13e-75,294
+NODE_11032_length_494_cov_1.073634_g9845_i0,Orthonairovirus haemorrhagiae strain BA8004 segment M, complete sequence,93.333,135,9,0,157,291,1,135,4.78e-47,200
+NODE_11032_length_494_cov_1.073634_g9845_i0,Orthonairovirus haemorrhagiae strain BA8004 segment L, complete sequence,91.429,140,12,0,2,141,147,8,8.01e-45,193
+NODE_11032_length_494_cov_1.073634_g9845_i0,Garlic virus D isolate GarVD_BR, complete genome,97.895,95,2,0,205,299,8466,8372,1.75e-36,165
+NODE_11032_length_494_cov_1.073634_g9845_i0,Longquan Rhinolophus sinicus vesiculovirus 1, complete genome,90.400,125,10,2,10,133,11063,10940,6.28e-36,163
+NODE_11247_length_488_cov_5.691566_g10060_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,87.082,449,54,3,42,488,4992,4546,8.96e-139,505
+NODE_11247_length_488_cov_5.691566_g10060_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,85.783,415,49,10,79,488,743,1152,1.54e-116,431
+NODE_11247_length_488_cov_5.691566_g10060_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,86.328,256,29,4,1,253,489,741,2.75e-69,274
+NODE_11247_length_488_cov_5.691566_g10060_i0,Dickeya phage phiDP23.1 clone pD23.contig.14_1 genomic sequence,86.765,272,30,4,1,269,270,2,1.63e-76,298
+NODE_11247_length_488_cov_5.691566_g10060_i0,MAG: Chrocacirn virus isolate CC1A_k141_29616 genomic sequence,82.282,333,32,12,1,332,320,626,5.95e-66,263
+NODE_11247_length_488_cov_5.691566_g10060_i0,MAG: Ripashof virus isolate MP1_k141_46323 genomic sequence,80.864,324,57,5,3,326,358,676,4.63e-62,250
+NODE_11826_length_475_cov_1.348259_g10638_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,96.360,467,17,0,1,467,612,146,0.0,769
+NODE_11826_length_475_cov_1.348259_g10638_i0,Pseudomonas phage ZCPA1 Seq22 genomic sequence,92.781,471,34,0,1,471,583,113,0.0,682
+NODE_11826_length_475_cov_1.348259_g10638_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,91.832,453,35,2,19,470,883,1334,1.38e-176,630
+NODE_11826_length_475_cov_1.348259_g10638_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,91.832,453,35,2,19,470,4596,5047,1.38e-176,630
+NODE_11826_length_475_cov_1.348259_g10638_i0,Paenibacillus phage Pd_22F, complete genome,85.129,464,67,2,1,463,82779,82317,2.45e-129,473
+NODE_13137_length_447_cov_41.128342_g11946_i0,Clandestinovirus isolate 347.936635, partial genome,78.182,110,18,5,63,169,404280,404386,1.64e-06,65.8
+NODE_13285_length_445_cov_1.196237_g12094_i0,MAG: Terrestrivirus sp. clone Terrestrivirus_3 genomic sequence,77.833,203,45,0,236,438,176972,176770,7.38e-25,126
+NODE_13516_length_440_cov_15.732970_g12325_i0,Bovine viral diarrhea virus cpA2 RNA,85.526,228,33,0,93,320,801,574,8.97e-59,239
+NODE_13516_length_440_cov_15.732970_g12325_i0,Bovine viral diarrhea virus CP1 putative helcase/protease mRNA, partial cds,85.463,227,33,0,94,320,3194,2968,3.23e-58,237
+NODE_13516_length_440_cov_15.732970_g12325_i0,Bovine viral diarrhea virus 1 isolate CA2006, complete genome,85.022,227,34,0,94,320,8609,8383,1.50e-56,231
+NODE_13516_length_440_cov_15.732970_g12325_i0,Bovine viral diarrhea virus mRNA sequence,85.022,227,34,0,94,320,508,282,1.50e-56,231
+NODE_13516_length_440_cov_15.732970_g12325_i0,Bovine viral diarrhea virus strain Osloss polyprotein gene, complete cds,84.234,222,35,0,102,323,5372,5151,4.20e-52,217
+NODE_13944_length_433_cov_5.494444_g12753_i0,Poaceae Liege totivirus 16 putative capsid protein (ORF1) and putative RNA-dependent RNA polymerase (ORF2) genes, complete cds,93.750,96,6,0,302,397,4665,4760,1.98e-30,145
+NODE_13944_length_433_cov_5.494444_g12753_i0,Orthonairovirus haemorrhagiae strain BA04032 segment L, complete sequence,88.119,101,8,3,313,412,12134,12231,4.31e-22,117
+NODE_13944_length_433_cov_5.494444_g12753_i0,Tomato zonate spot virus segment S, complete sequence,100.000,53,0,0,379,431,1788,1840,1.56e-16,99.0
+NODE_13944_length_433_cov_5.494444_g12753_i0,Orthonairovirus haemorrhagiae strain BA84002 segment M, complete sequence,96.226,53,1,1,311,363,91,142,1.22e-12,86.1
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus p125 protein gene, partial cds,78.472,432,70,10,19,431,1038,1465,1.87e-65,261
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus p125 protein gene, partial cds,81.395,172,28,3,262,431,1068,1237,3.29e-28,137
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome C5 polyprotein mRNA, partial cds,78.241,432,71,10,19,431,926,1353,8.71e-64,255
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome C5 polyprotein mRNA, partial cds,81.395,172,28,3,262,431,956,1125,3.29e-28,137
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome D4 polyprotein mRNA, partial cds,78.551,345,55,7,104,431,900,1242,6.88e-50,209
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome D4 polyprotein mRNA, partial cds,84.348,115,18,0,317,431,900,1014,5.55e-21,113
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome D3 polyprotein mRNA, partial cds,78.261,345,56,7,104,431,786,1128,3.20e-48,204
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome D3 polyprotein mRNA, partial cds,83.478,115,19,0,317,431,786,900,2.58e-19,108
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome C4 polyprotein mRNA, partial cds,78.078,333,53,8,116,431,823,1152,6.93e-45,193
+NODE_14091_length_431_cov_1.083799_g12900_i0,Bovine viral diarrhea virus-2 subgenome C4 polyprotein mRNA, partial cds,82.524,103,17,1,329,431,823,924,9.35e-14,89.8
+NODE_16459_length_394_cov_2.448598_g15267_i0,Betacoronavirus 1 strain GCCDC4, complete genome,94.937,79,3,1,25,103,1,78,8.36e-24,122
+NODE_16459_length_394_cov_2.448598_g15267_i0,Diolcogaster facetosa bracovirus segment 29, complete sequence,90.476,84,7,1,36,119,11974,11892,6.51e-20,110
+NODE_16872_length_388_cov_3.434921_g15680_i0,Escherichia phage P1 isolate transconjugant 2(L-II), complete genome,100.000,247,0,0,142,388,88826,89072,1.98e-124,457
+NODE_16872_length_388_cov_3.434921_g15680_i0,MAG: Bacteriophage sp. isolate 0847_7085, partial genome,100.000,247,0,0,142,388,79313,79067,1.98e-124,457
+NODE_17502_length_380_cov_3.719870_g16310_i0,MAG: Marseillevirus LCMAC103, sequence,82.734,139,24,0,236,374,10059,9921,2.23e-24,124
+NODE_17825_length_376_cov_2.726073_g16633_i0,Brevundimonas phage vB_BpoS-Leszy, complete genome,79.599,299,57,4,3,299,35452,35748,1.65e-50,211
+NODE_17825_length_376_cov_2.726073_g16633_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctKvs1, partial genome,79.599,299,57,4,3,299,7294,6998,1.65e-50,211
+NODE_17825_length_376_cov_2.726073_g16633_i0,Brevundimonas phage vB_BgoS-Fanboy, complete genome,79.530,298,57,4,4,299,44488,44783,5.92e-50,209
+NODE_17825_length_376_cov_2.726073_g16633_i0,Brevundimonas phage vB_BgoS-BabaJaga, complete genome,79.530,298,57,4,4,299,72219,71924,5.92e-50,209
+NODE_17825_length_376_cov_2.726073_g16633_i0,Brevundimonas phage vB_BsubS-Delta, complete genome,79.264,299,58,4,3,299,51589,51885,7.66e-49,206
+NODE_19555_length_357_cov_3.577465_g18363_i0,Ilarvirus APLPV isolate Q15R3 segment RNA3, complete sequence,100.000,35,0,0,216,250,1,35,1.28e-06,65.8
+NODE_20096_length_352_cov_3.014337_g18904_i0,Lima bean endornavirus 1 isolate LA, complete genome,93.103,58,4,0,1,58,58,1,9.68e-13,86.1
+NODE_20222_length_351_cov_1.719424_g19030_i0,Escherichia phage P1 isolate transconjugant 2(L-II), complete genome,99.715,351,1,0,1,351,89418,89068,1.27e-180,643
+NODE_20222_length_351_cov_1.719424_g19030_i0,MAG: Bacteriophage sp. isolate 0847_7085, partial genome,99.715,351,1,0,1,351,78721,79071,1.27e-180,643
+NODE_20330_length_350_cov_2.223827_g19138_i0,Gardner-Rasheed feline sarcoma virus (GR-FeSV) proviral genome coding for P70 gag-fgr polyprotein Sequence is partially homologous to actin and partially to the tyrosine-specific kinase gene family,87.500,136,17,0,215,350,803,668,2.01e-34,158
+NODE_21183_length_342_cov_2.282528_g19991_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,92.219,347,17,10,1,342,2152,1811,2.85e-132,483
+NODE_21183_length_342_cov_2.282528_g19991_i0,MAG: Ripoflyv virus isolate KCAP1_k141_439794 genomic sequence,85.841,339,45,3,6,342,399,736,1.80e-94,357
+NODE_21183_length_342_cov_2.282528_g19991_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,82.955,352,42,15,1,342,950,1293,8.56e-78,302
+NODE_21183_length_342_cov_2.282528_g19991_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,82.955,352,42,15,1,342,3012,3355,8.56e-78,302
+NODE_21183_length_342_cov_2.282528_g19991_i0,MAG: Ripaflad virus isolate KCAP2_k141_103046 genomic sequence,88.034,117,11,3,186,300,2,117,9.18e-28,135
+NODE_21278_length_341_cov_3.223881_g20086_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,91.471,340,27,2,2,341,2106,2443,2.86e-127,466
+NODE_21278_length_341_cov_3.223881_g20086_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,86.047,344,43,5,2,341,996,654,1.07e-96,364
+NODE_21278_length_341_cov_3.223881_g20086_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,86.047,344,43,5,2,341,3058,2716,1.07e-96,364
+NODE_21278_length_341_cov_3.223881_g20086_i0,MAG: Ripoflyv virus isolate KCAP1_k141_439794 genomic sequence,84.326,319,43,5,2,315,440,124,6.59e-79,305
+NODE_21278_length_341_cov_3.223881_g20086_i0,Stealth virus 1 clone 3B43, genomic sequence,81.714,350,44,16,4,341,1111,1452,5.17e-70,276
+NODE_21680_length_338_cov_1.162264_g20488_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,87.926,323,29,8,23,338,1463,1782,6.35e-99,372
+NODE_21680_length_338_cov_1.162264_g20488_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,84.161,322,41,8,25,338,3703,3384,2.35e-78,303
+NODE_21680_length_338_cov_1.162264_g20488_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,84.959,246,29,6,100,338,1566,1322,5.19e-60,243
+NODE_21680_length_338_cov_1.162264_g20488_i0,MAG: Felid alphaherpesvirus 1 isolate 4712 genomic sequence,83.626,171,26,2,25,194,451,282,5.38e-35,159
+NODE_21680_length_338_cov_1.162264_g20488_i0,MAG: Ripathuj virus isolate RCCP2_k141_221326 genomic sequence,83.230,161,27,0,51,211,272,112,1.16e-31,148
+NODE_22615_length_330_cov_1.443580_g21423_i0,MAG: Shrew picobirnavirus 5 isolate picobirna_4 RNA-dependent RNA polymerase gene, complete cds,90.030,331,28,4,1,328,338,10,1.68e-114,424
+NODE_22615_length_330_cov_1.443580_g21423_i0,MAG: Shrew picobirnavirus 5 isolate picobirna_3 RNA-dependent RNA polymerase gene, complete cds,89.728,331,29,4,1,328,338,10,7.83e-113,418
+NODE_22615_length_330_cov_1.443580_g21423_i0,MAG: Shrew picobirnavirus 5 isolate picobirna_4 RNA-dependent RNA polymerase gene, complete cds,89.198,324,30,4,10,330,420,99,2.83e-107,399
+NODE_22615_length_330_cov_1.443580_g21423_i0,MAG: Shrew picobirnavirus 5 isolate picobirna_4 RNA-dependent RNA polymerase gene, complete cds,95.050,101,5,0,1,101,455,555,5.24e-35,159
+NODE_22615_length_330_cov_1.443580_g21423_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,87.387,333,37,5,1,330,1305,975,1.33e-100,377
+NODE_22615_length_330_cov_1.443580_g21423_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,87.387,333,37,5,1,330,3367,3037,1.33e-100,377
+NODE_22621_length_330_cov_1.190661_g21429_i0,Stealth virus 1 clone 3B43, genomic sequence,83.631,336,39,11,1,330,571,896,8.22e-78,302
+NODE_22621_length_330_cov_1.190661_g21429_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,78.176,307,54,11,9,312,1580,1876,3.11e-42,183
+NODE_22621_length_330_cov_1.190661_g21429_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,77.064,327,62,10,8,330,1527,1210,5.20e-40,176
+NODE_22621_length_330_cov_1.190661_g21429_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,77.064,327,62,10,8,330,3589,3272,5.20e-40,176
+NODE_22621_length_330_cov_1.190661_g21429_i0,Paenibacillus phage Pd_22F, complete genome,80.952,168,22,7,165,330,83908,84067,1.91e-24,124
+NODE_23051_length_326_cov_2.478261_g21859_i0,MAG: Ripagliz virus isolate KCAP2_k141_339122 genomic sequence,78.378,111,22,2,203,312,796,687,2.49e-08,71.3
+NODE_23467_length_323_cov_0.924000_g22275_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,83.077,325,51,4,1,323,1192,870,4.83e-75,292
+NODE_23467_length_323_cov_0.924000_g22275_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,97.778,45,1,0,279,323,738,694,1.47e-10,78.7
+NODE_23467_length_323_cov_0.924000_g22275_i0,Moraxella phage Mcat16, complete genome,80.675,326,58,5,1,323,4211,3888,1.06e-61,248
+NODE_23467_length_323_cov_0.924000_g22275_i0,Stealth virus 1 clone 3B43 T3,93.878,147,9,0,1,147,147,1,6.43e-54,222
+NODE_23467_length_323_cov_0.924000_g22275_i0,Stealth virus 1 clone 3B43, genomic sequence,93.878,147,9,0,1,147,3474,3620,6.43e-54,222
+NODE_23467_length_323_cov_0.924000_g22275_i0,MAG: Chrocacirn virus isolate CC1A_k141_29616 genomic sequence,88.806,134,15,0,190,323,633,500,1.10e-36,165
+NODE_24671_length_313_cov_1.600000_g23479_i0,Rose partitivirus isolate PB segment dsRNA1, complete sequence,99.042,313,3,0,1,313,781,1093,3.22e-156,562
+NODE_24671_length_313_cov_1.600000_g23479_i0,Rose partitivirus segment RNA1, complete sequence,99.042,313,3,0,1,313,781,1093,3.22e-156,562
+NODE_24671_length_313_cov_1.600000_g23479_i0,Rose partitivirus isolate Gyeongju RNA-dependent RNA polymerase gene, partial cds,98.722,313,4,0,1,313,855,1167,1.50e-154,556
+NODE_25164_length_309_cov_2.978814_g23972_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctUX91, partial genome,92.617,149,11,0,161,309,115029,114881,1.02e-51,215
+NODE_25956_length_303_cov_5.860870_g24764_i0,Banana bract mosaic virus isolate 3-42, complete genome,81.013,158,24,6,81,234,9500,9655,2.25e-23,121
+NODE_26501_length_299_cov_6.398230_g25309_i0,Bovine viral diarrhea virus p125 protein gene, partial cds,85.281,231,32,2,43,272,1495,1266,2.11e-58,237
+NODE_26501_length_299_cov_6.398230_g25309_i0,Pestivirus type 1 cytopathic genomic RNA, complete genome,81.974,233,28,8,53,272,8397,8166,7.74e-43,185
+NODE_26501_length_299_cov_6.398230_g25309_i0,Bovine viral diarrhea virus mRNA sequence,81.197,234,27,10,53,272,1080,850,6.02e-39,172
+NODE_27627_length_292_cov_1.273973_g26435_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,92.466,292,22,0,1,292,562,853,6.82e-113,418
+NODE_27627_length_292_cov_1.273973_g26435_i0,MAG: Ripapog virus isolate KCAP3_k141_289454 genomic sequence,86.219,283,39,0,1,283,1312,1030,1.54e-79,307
+NODE_27627_length_292_cov_1.273973_g26435_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,79.932,294,55,4,1,292,4628,4337,3.45e-51,213
+NODE_27627_length_292_cov_1.273973_g26435_i0,Pseudomonas phage ZCPA1 Seq22 genomic sequence,85.185,189,26,2,1,188,533,720,4.50e-45,193
+NODE_27627_length_292_cov_1.273973_g26435_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,81.385,231,41,2,63,292,683,454,2.09e-43,187
+NODE_27627_length_292_cov_1.273973_g26435_i0,Dickeya phage phiDP23.1 clone pD23.contig.3_1 genomic sequence,81.500,200,35,2,1,199,915,717,3.53e-36,163
+NODE_27727_length_291_cov_2.472477_g26535_i0,MAG: Severe acute respiratory syndrome-related coronavirus isolate CQ/L80.18/2021, complete genome,99.640,278,1,0,1,278,278,1,3.92e-140,508
+NODE_27727_length_291_cov_2.472477_g26535_i0,Human respirovirus 1 strain t146a290_HPIV1, complete genome,100.000,76,0,0,188,263,15600,15675,1.65e-29,141
+NODE_27727_length_291_cov_2.472477_g26535_i0,MAG: Human respirovirus 1 isolate HPIV1/USA/8L9/2011, partial genome,100.000,76,0,0,188,263,15597,15672,1.65e-29,141
+NODE_27727_length_291_cov_2.472477_g26535_i0,MAG: Human respirovirus 1 isolate HPIV1/USA/11D4/2013, complete genome,98.276,58,1,0,188,245,15560,15617,2.16e-18,104
+NODE_27727_length_291_cov_2.472477_g26535_i0,MAG: Human respirovirus 1 isolate HPIV1/USA/12N5/2015, complete genome,95.349,43,1,1,208,250,15567,15608,7.88e-08,69.4
+NODE_28363_length_288_cov_1.413953_g27171_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,78.095,105,20,3,3,106,12062,12164,3.62e-06,63.9
+NODE_28714_length_286_cov_1.915493_g27522_i0,BeAn 58058 virus strain BeAn58058, complete genome,80.328,122,23,1,99,219,8486,8607,1.65e-14,91.6
+NODE_28714_length_286_cov_1.915493_g27522_i0,BeAn 58058 virus, complete genome,80.328,122,23,1,99,219,8486,8607,1.65e-14,91.6
+NODE_28714_length_286_cov_1.915493_g27522_i0,HIV-1 isolate GB1WS100083 from USA, partial genome,79.070,129,26,1,99,226,11021,10893,2.13e-13,87.9
+NODE_28714_length_286_cov_1.915493_g27522_i0,Zika virus isolate Pf13/251013-18, complete genome,78.226,124,26,1,96,218,11008,10885,1.28e-10,78.7
+NODE_28714_length_286_cov_1.915493_g27522_i0,HIV-1 isolate BC001_proviral_073_Chimera from Canada defective provirus genomic sequence,85.526,76,8,3,165,239,1355,1428,4.62e-10,76.8
+NODE_28714_length_286_cov_1.915493_g27522_i0,HIV-1 isolate BC001_proviral_073_Chimera from Canada defective provirus genomic sequence,90.909,55,5,0,165,219,873,819,1.66e-09,75.0
+NODE_28815_length_286_cov_1.136150_g27623_i0,Stealth virus 1 clone C16128 T3,89.888,178,16,2,5,180,332,155,1.21e-55,228
+NODE_28815_length_286_cov_1.136150_g27623_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,86.550,171,21,2,5,174,5703,5534,2.05e-43,187
+NODE_28815_length_286_cov_1.136150_g27623_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,85.556,180,22,2,6,181,1549,1370,7.36e-43,185
+NODE_28815_length_286_cov_1.136150_g27623_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,83.824,136,17,4,5,137,1684,1551,1.63e-24,124
+NODE_28815_length_286_cov_1.136150_g27623_i0,HIV-1 isolate UNC_434_PL5_J11 from USA defective genome,85.635,181,21,4,4,180,3637,3458,7.36e-43,185
+NODE_28815_length_286_cov_1.136150_g27623_i0,HIV-1 isolate UNC_434_PL5_A3 from USA defective genome,85.635,181,21,4,4,180,3637,3458,7.36e-43,185
+NODE_28983_length_285_cov_1.452830_g27791_i0,Klebsiella phage ST974-OXA48phi18.2, complete genome,99.649,285,1,0,1,285,17100,16816,4.92e-144,521
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage phi456, complete genome,99.649,285,1,0,1,285,48817,49101,4.92e-144,521
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage phi456, complete genome,99.649,285,1,0,1,285,55747,55463,4.92e-144,521
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage phi456, complete genome,99.298,285,2,0,1,285,53781,54065,2.29e-142,516
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage phi456, complete genome,89.123,285,31,0,1,285,69927,70211,5.28e-94,355
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage RCS47, complete genome,99.649,285,1,0,1,285,107519,107803,4.92e-144,521
+NODE_28983_length_285_cov_1.452830_g27791_i0,Bacteriophage P1 DNA methylase homolog DarB' (darB') gene, partial cds; lysozyme lysA (lysA) and single-stranded DNA-binding protein SSB-P1 (ssb-P1) genes, complete cds; and unknown genes,99.649,285,1,0,1,285,7337,7621,4.92e-144,521
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage GER2, complete genome,99.298,285,2,0,1,285,14342,14626,2.29e-142,516
+NODE_28983_length_285_cov_1.452830_g27791_i0,Escherichia phage GER2, complete genome,99.298,285,2,0,1,285,84128,83844,2.29e-142,516
+NODE_29238_length_284_cov_1.137441_g28046_i0,Burkholderia phage BcepIL02, complete genome,89.401,217,23,0,68,284,55236,55452,1.51e-69,274
+NODE_29238_length_284_cov_1.137441_g28046_i0,Burkholderia phage DC1, complete genome,88.940,217,24,0,68,284,54414,54630,7.04e-68,268
+NODE_29238_length_284_cov_1.137441_g28046_i0,Burkholderia cepacia phage Bcep22, complete genome,86.638,232,31,0,53,284,56263,56494,1.52e-64,257
+NODE_29238_length_284_cov_1.137441_g28046_i0,Burkholderia phage JC1, complete genome,82.746,284,49,0,1,284,53177,53460,1.97e-63,254
+NODE_29238_length_284_cov_1.137441_g28046_i0,Ralstonia phage NK-7, complete genome,87.037,216,20,5,73,284,25794,25583,1.99e-58,237
+NODE_29573_length_282_cov_2.210526_g28381_i0,Severe acute respiratory syndrome coronavirus 2 genome assembly, complete genome: monopartite,91.667,72,6,0,88,159,17955,17884,2.70e-17,100
+NODE_29588_length_282_cov_2.148325_g28396_i0,MAG: Qianjiang picobirna-like virus 2 isolate QJ3MS693 genomic sequence,83.039,283,46,2,1,282,2712,2431,5.44e-64,255
+NODE_29588_length_282_cov_2.148325_g28396_i0,MAG: Chronamorb virus isolate CN1B_k141_76724 genomic sequence,84.681,235,34,2,1,234,128,361,2.55e-57,233
+NODE_29588_length_282_cov_2.148325_g28396_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,75.524,286,60,6,1,282,387,666,9.57e-27,132
+NODE_29588_length_282_cov_2.148325_g28396_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,75.524,286,60,6,1,282,2449,2728,9.57e-27,132
+NODE_29588_length_282_cov_2.148325_g28396_i0,MAG: Sopatryb virus isolate SP1A_k141_15646 genomic sequence,81.176,170,22,6,112,281,448,607,1.24e-25,128
+NODE_29601_length_282_cov_1.976077_g28409_i0,Chikungunya virus isolate Amapa_613_Brazil_2015 nonstructural polyprotein and structural polyprotein genes, complete cds,91.156,147,12,1,131,277,11657,11512,9.30e-47,198
+NODE_29601_length_282_cov_1.976077_g28409_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,92.086,139,9,2,140,278,10474,10338,1.20e-45,195
+NODE_29601_length_282_cov_1.976077_g28409_i0,Human endogenous retrovirus clone ERV FTD putative reverse transcriptase (pol) pseudogene, partial cds,91.034,145,11,2,131,275,1058,1200,1.20e-45,195
+NODE_29601_length_282_cov_1.976077_g28409_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,88.816,152,14,3,125,276,6541,6393,2.60e-42,183
+NODE_29601_length_282_cov_1.976077_g28409_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,88.406,138,14,2,133,270,8794,8929,9.43e-37,165
+NODE_29601_length_282_cov_1.976077_g28409_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,88.321,137,14,2,134,270,705,571,3.39e-36,163
+NODE_29601_length_282_cov_1.976077_g28409_i0,HIV-1 isolate 1Pt1-2008-P1A3 from USA defective genome,89.116,147,12,3,132,278,5009,4867,3.37e-41,180
+NODE_29985_length_280_cov_2.975845_g28793_i0,Bacteriophage f1-R208 ampicillinase gene mutation,99.643,280,1,0,1,280,681,402,2.90e-141,512
+NODE_29985_length_280_cov_2.975845_g28793_i0,Mutant Human respirovirus 3 strain GE-GS/pHLC-HPIV3, complete genome,99.286,280,2,0,1,280,17177,17456,1.35e-139,507
+NODE_29985_length_280_cov_2.975845_g28793_i0,Semliki forest virus genomic RNA for non-structural polyprotein and structural polyprotein, strain A7,99.286,280,2,0,1,280,13625,13346,1.35e-139,507
+NODE_29985_length_280_cov_2.975845_g28793_i0,Bacteriophage phi-X174 genes for lysis protein and beta-lactamase,99.286,280,2,0,1,280,196,475,1.35e-139,507
+NODE_29985_length_280_cov_2.975845_g28793_i0,Escherichia phage P1 isolate transconjugant 2(L-II), complete genome,98.929,280,3,0,1,280,74020,73741,6.28e-138,501
+NODE_30092_length_280_cov_1.483092_g28900_i0,TPA_asm: Dalbergia cochinchinensis dicistro-like virus 1 isolate Dc1 non-structural polyprotein gene, complete cds; and structural polyprotein gene, partial cds,91.786,280,23,0,1,280,5298,5577,1.42e-104,390
+NODE_30288_length_279_cov_1.606796_g29096_i0,Human gammaherpesvirus 4 isolate HKNPC60, partial genome,82.927,287,39,8,1,279,35958,35674,2.50e-62,250
+NODE_30288_length_279_cov_1.606796_g29096_i0,Human gammaherpesvirus 4 isolate HKHD40, partial genome,82.927,287,39,8,1,279,157744,157460,2.50e-62,250
+NODE_30463_length_278_cov_2.414634_g29271_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,81.716,268,43,5,9,273,6501,6237,7.02e-53,219
+NODE_30463_length_278_cov_2.414634_g29271_i0,HIV-1 isolate BC001_proviral_248_Chimera from Canada defective provirus genomic sequence,82.329,249,36,5,12,260,1491,1251,4.23e-50,209
+NODE_30463_length_278_cov_2.414634_g29271_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,79.851,268,48,4,2,267,2421,2684,1.53e-44,191
+NODE_30463_length_278_cov_2.414634_g29271_i0,Stealth virus clone C1629 T7,83.562,73,10,2,194,264,1,73,2.69e-07,67.6
+NODE_32022_length_272_cov_1.407035_g30830_i0,Stealth virus 1 clone C16128 T3,90.076,131,11,2,1,130,200,71,7.00e-38,169
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,89.313,131,14,0,1,131,8924,8794,9.05e-37,165
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,89.231,130,14,0,1,130,576,705,3.26e-36,163
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,88.722,133,15,0,1,133,6404,6536,3.26e-36,163
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,84.962,133,19,1,1,132,7159,7291,2.55e-27,134
+NODE_32022_length_272_cov_1.407035_g30830_i0,Human herpesvirus 4 Epstein-Barr virus/human cellular DNA left junction from Namalwa cell line,88.722,133,14,1,1,133,401,270,1.17e-35,161
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,88.636,132,11,3,1,130,3749,3878,1.51e-34,158
+NODE_32022_length_272_cov_1.407035_g30830_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,87.970,133,16,0,1,133,5572,5440,1.51e-34,158
+NODE_32383_length_270_cov_2.335025_g31191_i0,MAG: Reoviridae sp. isolate R66-k141_282067 segment 3 genomic sequence,87.562,201,23,2,71,270,3,202,8.72e-57,231
+NODE_32570_length_269_cov_3.147959_g31378_i0,MAG: Chronavilt virus isolate CN1A_k141_118239 genomic sequence,81.000,200,35,3,52,248,4059,3860,5.38e-34,156
+NODE_32570_length_269_cov_3.147959_g31378_i0,Beauveria bassiana partitivirus 5 strain RCEF 6874 coat protein gene, complete cds,86.620,142,16,3,83,222,1381,1521,1.93e-33,154
+NODE_32570_length_269_cov_3.147959_g31378_i0,MAG: Cressdnaviricota sp. isolate ctcd46, complete genome,82.692,156,21,6,50,201,1819,1666,2.52e-27,134
+NODE_32570_length_269_cov_3.147959_g31378_i0,Uncultured marine virus clone SOG02701, complete genome,82.581,155,23,4,50,201,421,268,2.52e-27,134
+NODE_32570_length_269_cov_3.147959_g31378_i0,White spot syndrome virus isolate WSSV_CIBA_002,82.645,121,16,5,87,204,185072,185190,7.11e-18,102
+NODE_32572_length_269_cov_3.142857_g31380_i0,Dickeya phage phiDP23.1 clone pD23.contig.44_1 genomic sequence,92.803,264,19,0,1,264,644,381,2.27e-102,383
+NODE_32572_length_269_cov_3.142857_g31380_i0,Dickeya phage phiDP10.3 clone pD10.contig.26_1 genomic sequence,92.803,264,19,0,1,264,2706,2443,2.27e-102,383
+NODE_33876_length_264_cov_1.476440_g32684_i0,Human papillomavirus type 16 isolate A422-1 proviral integration site genomic sequence,86.726,113,12,3,140,252,318,209,5.34e-24,122
+NODE_34276_length_262_cov_1.984127_g33084_i0,MAG: Reoviridae sp. isolate R66-k141_282067 segment 3 genomic sequence,88.018,217,26,0,46,262,3,219,1.39e-64,257
+NODE_34276_length_262_cov_1.984127_g33084_i0,MAG: Chrocagynt virus isolate CC1A_k141_92803 genomic sequence,93.421,76,5,0,187,262,130,205,3.19e-21,113
+NODE_34276_length_262_cov_1.984127_g33084_i0,MAG: Ripogryp virus isolate KCAP3_k141_139890 genomic sequence,92.308,52,4,0,190,241,2362,2413,1.50e-09,75.0
+NODE_34316_length_262_cov_1.619048_g33124_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,87.619,105,12,1,155,258,7261,7157,1.90e-23,121
+NODE_34316_length_262_cov_1.619048_g33124_i0,Human endogenous retrovirus HERV-K(I) DNA, complete sequence and flanking region,86.316,95,13,0,164,258,10814,10720,1.92e-18,104
+NODE_34476_length_261_cov_2.675532_g33284_i0,Banana bract mosaic virus isolate 3-42, complete genome,89.773,88,7,2,119,205,9569,9655,1.14e-20,111
+NODE_34717_length_260_cov_2.459893_g33525_i0,MAG: Capillovirus mali isolate A2, complete genome,93.151,73,2,1,153,222,78,6,1.90e-18,104
+NODE_34838_length_260_cov_1.347594_g33646_i0,HIV-1 isolate M0107v1d14-5M15-C1 from USA genomic sequence,85.366,164,20,4,43,204,474,635,2.39e-37,167
+NODE_34838_length_260_cov_1.347594_g33646_i0,HIV-1 isolate M0107v1d14-5M12-H12 from USA genomic sequence,85.366,164,20,4,43,204,246,407,2.39e-37,167
+NODE_34838_length_260_cov_1.347594_g33646_i0,HIV-1 isolate C9003v1d14-5M12-C07 from USA genomic sequence,85.366,164,20,4,43,204,203,364,2.39e-37,167
+NODE_34838_length_260_cov_1.347594_g33646_i0,HIV-1 isolate C9003v1d14-5M05-B08 from USA genomic sequence,85.366,164,20,4,43,204,244,405,2.39e-37,167
+NODE_34838_length_260_cov_1.347594_g33646_i0,HIV-1 isolate C9003v1d14-5M05-B05 from USA genomic sequence,85.366,164,20,4,43,204,242,403,2.39e-37,167
+NODE_34960_length_259_cov_2.403226_g33768_i0,Stenotrophomonas phage StM171, complete genome,84.109,258,41,0,1,258,23133,22876,2.30e-62,250
+NODE_35753_length_256_cov_2.125683_g34561_i0,Hepatitis B virus isolate S606 nonfunctional large S protein (S) gene, partial sequence,91.228,57,5,0,16,72,73,17,1.13e-10,78.7
+NODE_36033_length_255_cov_1.692308_g34841_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctCfR2, partial genome,75.918,245,49,7,10,249,65187,65426,2.39e-22,117
+NODE_36273_length_254_cov_1.690608_g35081_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,81.771,192,32,2,64,254,3174,3363,1.40e-34,158
+NODE_36273_length_254_cov_1.690608_g35081_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,82.123,179,30,1,73,251,4431,4607,6.51e-33,152
+NODE_36273_length_254_cov_1.690608_g35081_i0,Human papillomavirus type 16 isolate A474-1 proviral integration site genomic sequence,85.915,142,18,1,113,254,302,441,2.34e-32,150
+NODE_36273_length_254_cov_1.690608_g35081_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,90.196,51,5,0,204,254,6599,6649,2.43e-07,67.6
+NODE_36273_length_254_cov_1.690608_g35081_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,90.196,51,5,0,204,254,9090,9140,2.43e-07,67.6
+NODE_36287_length_254_cov_1.580110_g35095_i0,Bovine viral diarrhea virus mRNA sequence,82.099,162,29,0,2,163,478,639,5.07e-29,139
+NODE_36814_length_252_cov_0.832402_g35622_i0,Chikungunya virus isolate Amapa_613_Brazil_2015 nonstructural polyprotein and structural polyprotein genes, complete cds,90.404,198,17,2,55,251,11357,11553,3.70e-65,259
+NODE_36814_length_252_cov_0.832402_g35622_i0,Stealth virus 1 clone C16128 T3,88.360,189,17,4,65,251,356,171,4.85e-54,222
+NODE_36814_length_252_cov_0.832402_g35622_i0,Human endogenous retrovirus H HERV-H/env60 proviral copy, clone 734E12,86.432,199,22,4,54,250,3205,3400,2.92e-51,213
+NODE_36814_length_252_cov_0.832402_g35622_i0,HIV-1 isolate UNC_434_PL5_J11 from USA defective genome,86.772,189,21,3,66,252,3659,3473,1.36e-49,207
+NODE_36814_length_252_cov_0.832402_g35622_i0,HIV-1 isolate UNC_434_PL5_A3 from USA defective genome,86.772,189,21,3,66,252,3659,3473,1.36e-49,207
+NODE_37352_length_250_cov_0.870056_g36160_i0,HIV-1 isolate BC003_proviral_154_Chimera from Canada defective provirus genomic sequence,82.011,189,29,3,38,225,2440,2256,4.94e-34,156
+NODE_37352_length_250_cov_0.870056_g36160_i0,Human papillomavirus type 16 genes for E6 protein, E7 protein, E1-E4 fusion protein, partial and complete cds,76.562,192,42,2,35,225,865,1054,6.53e-18,102
+NODE_37386_length_250_cov_0.870056_g36194_i0,Human endogenous retrovirus HERV-K(I) DNA, complete sequence and flanking region,93.617,47,3,0,3,49,10945,10991,1.84e-08,71.3
+NODE_37386_length_250_cov_0.870056_g36194_i0,HIV-1 isolate BC003_proviral_154_Chimera from Canada defective provirus genomic sequence,93.182,44,3,0,6,49,2947,2904,8.57e-07,65.8
+NODE_37537_length_249_cov_2.568182_g36345_i0,HIV-1 isolate BC001_proviral_073_Chimera from Canada defective provirus genomic sequence,88.806,134,11,3,4,134,1716,1584,1.06e-35,161
+NODE_37537_length_249_cov_2.568182_g36345_i0,HIV-1 isolate BC001_proviral_073_Chimera from Canada defective provirus genomic sequence,87.121,132,13,2,4,133,1288,1417,2.96e-31,147
+NODE_37537_length_249_cov_2.568182_g36345_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,85.211,142,17,2,3,142,3869,4008,3.83e-30,143
+NODE_37537_length_249_cov_2.568182_g36345_i0,HIV-1 isolate BC001_proviral_256_Chimera from Canada defective provirus genomic sequence,85.294,136,18,1,3,136,1364,1229,4.96e-29,139
+NODE_37803_length_249_cov_0.869318_g36611_i0,Stx converting phage vB_EcoS_P22, complete genome,100.000,195,0,0,55,249,23152,22958,9.72e-96,361
+NODE_37803_length_249_cov_0.869318_g36611_i0,Stx converting phage vB_EcoS_P32, complete genome,100.000,195,0,0,55,249,23152,22958,9.72e-96,361
+NODE_37803_length_249_cov_0.869318_g36611_i0,Stx converting phage vB_EcoS_P27, complete genome,100.000,195,0,0,55,249,23852,23658,9.72e-96,361
+NODE_37803_length_249_cov_0.869318_g36611_i0,Mutant Human betaherpesvirus 5 clone AD169-BAC20, complete genome,100.000,170,0,0,80,249,200374,200543,7.67e-82,315
+NODE_37803_length_249_cov_0.869318_g36611_i0,Mutant Human betaherpesvirus 5 clone AD169-BAC2, complete genome,100.000,170,0,0,80,249,201838,202007,7.67e-82,315
+NODE_37817_length_249_cov_0.863636_g36625_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctMpJ4, partial genome,98.795,249,3,0,1,249,10825,10577,9.38e-121,444
+NODE_37817_length_249_cov_0.863636_g36625_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctd6415, partial genome,98.795,249,3,0,1,249,9028,9276,9.38e-121,444
+NODE_37817_length_249_cov_0.863636_g36625_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctRxR1, partial genome,98.394,249,4,0,1,249,4867,5115,4.36e-119,438
+NODE_37817_length_249_cov_0.863636_g36625_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctJkZ5, partial genome,98.394,249,4,0,1,249,15263,15511,4.36e-119,438
+NODE_37817_length_249_cov_0.863636_g36625_i0,MAG TPA_asm: Caudoviricetes sp. isolate ctvLY19, partial genome,98.394,249,4,0,1,249,2454,2206,4.36e-119,438
+NODE_38090_length_248_cov_0.880000_g36898_i0,uncultured Caudovirales phage genome assembly,93.023,43,3,0,149,191,15509,15551,3.05e-06,63.9
+NODE_38116_length_248_cov_0.874286_g36924_i0,HIV-1 isolate BC003_proviral_154_Chimera from Canada defective provirus genomic sequence,89.630,135,12,1,93,227,2255,2387,1.75e-38,171
+NODE_38116_length_248_cov_0.874286_g36924_i0,Human endogenous retrovirus HERV-K(II) DNA, complete sequence and flanking region,88.356,146,12,4,93,237,10459,10600,1.75e-38,171
+NODE_38116_length_248_cov_0.874286_g36924_i0,Human endogenous retrovirus HERV-K(II) DNA, complete sequence and flanking region,92.208,77,5,1,151,227,10133,10208,1.39e-19,108
+NODE_38116_length_248_cov_0.874286_g36924_i0,HIV-1 isolate 127Pt1-2010-P6A12 from USA defective genome,88.636,132,15,0,95,226,4622,4753,1.05e-35,161
+NODE_38116_length_248_cov_0.874286_g36924_i0,HIV-1 isolate M0107v1d14-5M15-C1 from USA genomic sequence,88.235,136,14,2,103,237,636,502,1.05e-35,161
+NODE_38116_length_248_cov_0.874286_g36924_i0,HIV-1 isolate M0107v1d14-5M12-H12 from USA genomic sequence,88.235,136,14,2,103,237,408,274,1.05e-35,161
+NODE_38118_length_248_cov_0.874286_g36926_i0,Human papillomavirus type 16 genes for E6 protein, E7 protein, E1-E4 fusion protein, partial and complete cds,83.871,93,15,0,1,93,960,1052,5.04e-14,89.8
+NODE_38586_length_247_cov_0.879310_g37394_i0,Escherichia phage TR2, complete genome,100.000,247,0,0,1,247,20903,20657,1.19e-124,457
+NODE_38616_length_247_cov_0.873563_g37424_i0,HIV-1 isolate GB1WS100083 from USA, partial genome,89.333,75,8,0,173,247,10891,10965,1.08e-15,95.3
+NODE_38616_length_247_cov_0.873563_g37424_i0,HIV-1 isolate GB1WS100083 from USA, partial genome,100.000,36,0,0,183,218,9018,8983,2.35e-07,67.6
+NODE_38616_length_247_cov_0.873563_g37424_i0,HIV-1 isolate MRC023_Cluster241_size-6_count-1 from Belgium defective genome,89.474,76,4,3,173,247,1788,1860,3.88e-15,93.5
+NODE_38616_length_247_cov_0.873563_g37424_i0,HIV-1 isolate 1292_PBTM_36 from USA defective genome,91.176,68,6,0,173,240,589,656,3.88e-15,93.5
+NODE_38616_length_247_cov_0.873563_g37424_i0,HIV-1 isolate 9243_wk-2_4_O13 from USA defective genome,94.915,59,3,0,178,236,60,2,3.88e-15,93.5
+NODE_38616_length_247_cov_0.873563_g37424_i0,Chikungunya virus isolate Amapa_613_Brazil_2015 nonstructural polyprotein and structural polyprotein genes, complete cds,88.158,76,9,0,172,247,11356,11431,1.39e-14,91.6
+NODE_39164_length_245_cov_1.779070_g37972_i0,HIV-1 isolate MRC008_umi406bins_ubs-42_rep06_count-1 from Belgium defective genome,82.587,201,27,6,1,198,2805,3000,1.72e-38,171
+NODE_39164_length_245_cov_1.779070_g37972_i0,HIV-1 isolate GB1WS100380 from USA, partial genome,83.696,184,25,4,1,183,4261,4082,6.20e-38,169
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,83.607,244,31,2,1,244,754,520,1.68e-53,220
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,89.565,115,12,0,130,244,2330,2216,2.89e-31,147
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,85.124,121,16,2,56,176,2269,2151,4.87e-24,122
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,84.348,115,14,3,133,244,767,654,3.80e-20,110
+NODE_39526_length_244_cov_1.801170_g38334_i0,Human endogenous retrovirus H HERV-H/env60 proviral copy, clone 734E12,92.800,125,9,0,120,244,3205,3329,7.93e-42,182
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,92.000,125,10,0,120,244,3444,3568,3.69e-40,176
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,87.097,124,16,0,121,244,5737,5614,1.35e-29,141
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,81.250,144,21,4,105,244,4580,4721,1.06e-20,111
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,93.966,116,5,2,130,244,10799,10685,1.33e-39,174
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,88.281,128,15,0,117,244,5199,5326,1.73e-33,154
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,79.032,186,26,7,1,184,12767,12593,8.16e-22,115
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,82.609,115,18,1,132,244,12781,12667,2.28e-17,100
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,91.870,123,10,0,122,244,8120,8242,4.77e-39,172
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,84.615,117,14,3,131,244,7003,7118,2.93e-21,113
+NODE_39526_length_244_cov_1.801170_g38334_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,82.609,115,18,1,132,244,4433,4547,2.28e-17,100
+NODE_39581_length_244_cov_1.479532_g38389_i0,Ilarvirus APLPV isolate Q15R3 segment RNA3, complete sequence,94.203,69,2,1,1,69,67,1,1.77e-18,104
+NODE_39581_length_244_cov_1.479532_g38389_i0,Erinnyis ello cypovirus 2 isolate Brazil-Para-Belem segment 4, complete sequence,98.000,50,1,0,6,55,3331,3282,1.78e-13,87.9
+NODE_39581_length_244_cov_1.479532_g38389_i0,Rhizoctonia solani mitovirus 40 putative RNA-dependent RNA polymerase gene, complete cds,84.884,86,11,2,158,242,3518,3602,6.40e-13,86.1
+NODE_39581_length_244_cov_1.479532_g38389_i0,MAG: Partitiviridae sp. isolate R2-k141_1752734 putative RNA-dependent RNA polymerase gene, complete cds,87.324,71,9,0,174,244,10,80,8.27e-12,82.4
+NODE_39581_length_244_cov_1.479532_g38389_i0,MAG: Chrocaferb virus isolate CC1A_k141_77359 genomic sequence,95.238,42,2,0,201,242,36,77,2.32e-07,67.6
+NODE_39639_length_244_cov_0.900585_g38447_i0,MAG: Jingmen Crocidura shantungensis henipavirus 1 isolate para_6 nucleocapsid protein, phosphoprotein, matrix protein, hypothetical protein, fusion protein, attachment glycoprotein, and RNA polymerase genes, complete cds,83.036,112,19,0,8,119,21229,21340,6.35e-18,102
+NODE_39857_length_243_cov_2.676471_g38665_i0,MAG: Megaviridae environmental sample isolate mPacV-611 clone mPacV-611_c6,81.481,135,25,0,23,157,24986,24852,1.05e-20,111
+NODE_40031_length_243_cov_0.905882_g38839_i0,{alpha satellite DNA, centromere, junction} [phage 16, host=human, 4AF2/3/KO15, Genomic, 616 nt],80.189,212,37,4,18,225,395,185,1.72e-33,154
+NODE_41094_length_240_cov_2.071856_g39902_i0,Chikungunya virus isolate Amapa_613_Brazil_2015 nonstructural polyprotein and structural polyprotein genes, complete cds,92.568,148,10,1,9,156,11512,11658,9.92e-51,211
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate BC003_proviral_154_Chimera from Canada defective provirus genomic sequence,86.709,158,19,2,9,166,1394,1549,1.30e-39,174
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate BC003_proviral_154_Chimera from Canada defective provirus genomic sequence,87.179,78,10,0,159,236,1367,1444,4.85e-14,89.8
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,84.416,154,20,4,10,162,3330,3480,7.89e-32,148
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,85.965,114,15,1,8,121,4665,4777,1.72e-23,121
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate MRC022_umi1bins_ubs-3215_rep02_Duo10_count-2 from Belgium defective genome,86.517,89,5,5,152,236,4631,4716,1.35e-14,91.6
+NODE_41094_length_240_cov_2.071856_g39902_i0,Human papillomavirus type 16 isolate A474-1 proviral integration site genomic sequence,85.106,141,19,2,10,149,408,547,3.67e-30,143
+NODE_41094_length_240_cov_2.071856_g39902_i0,HIV-1 isolate DE00115VN005 from Viet Nam, complete genome,84.615,130,19,1,12,141,181,53,2.86e-26,130
+NODE_41727_length_233_cov_3.425000_g40535_i0,MAG: Ripashof virus isolate MP1_k141_46323 genomic sequence,84.868,152,19,3,3,152,194,45,2.12e-32,150
+NODE_41727_length_233_cov_3.425000_g40535_i0,MAG: Chrocadirk virus isolate CC1B_k141_10698 genomic sequence,92.000,100,8,0,54,153,283,184,1.28e-29,141
+NODE_41727_length_233_cov_3.425000_g40535_i0,Stealth virus 1 clone 3B43, genomic sequence,90.476,105,10,0,48,152,1608,1712,4.59e-29,139
+NODE_41727_length_233_cov_3.425000_g40535_i0,MAG: Sopazov virus isolate SP1B_k141_222276 genomic sequence,97.500,40,1,0,53,92,4352,4391,6.10e-08,69.4
+NODE_42231_length_228_cov_3.832258_g41039_i0,AKT8 provirus v-akt oncogene, complete cds,96.930,228,1,1,1,228,3441,3220,8.70e-101,377
+NODE_42764_length_213_cov_4.364286_g41572_i0,Human endogenous retrovirus H HERV-H/env60 proviral copy, clone 734E12,95.238,105,5,0,1,105,3309,3205,1.90e-37,167
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,93.269,104,7,0,1,104,10705,10808,1.48e-33,154
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,90.566,106,10,0,1,106,5306,5201,1.15e-29,141
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S071 from Switzerland nonfunctional gag protein (gag) gene, complete sequence; and nonfunctional pol protein (pol) gene, partial sequence,84.211,95,13,1,1,93,12687,12781,1.18e-14,91.6
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,91.818,110,7,2,1,108,8222,8113,5.33e-33,152
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,91.919,99,8,0,1,99,6340,6242,4.15e-29,139
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,84.158,101,14,1,1,99,7098,6998,2.53e-16,97.1
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate HK_JIDLNBL_S066 from Switzerland nonfunctional nef protein (nef) gene, complete sequence,83.158,95,14,1,1,93,4527,4433,5.48e-13,86.1
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,92.381,105,8,0,1,105,3548,3444,1.92e-32,150
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,89.423,104,11,0,1,104,5634,5737,6.94e-27,132
+NODE_42764_length_213_cov_4.364286_g41572_i0,HIV-1 isolate 074-AP-119-1-3_w0_110 from Botswana nonfunctional nef protein (nef) gene, complete sequence,88.421,95,9,1,13,105,4689,4595,2.51e-21,113
+NODE_42764_length_213_cov_4.364286_g41572_i0,Chikungunya virus isolate Amapa_613_Brazil_2015 nonstructural polyprotein and structural polyprotein genes, complete cds,91.509,106,7,1,1,104,11462,11357,8.92e-31,145

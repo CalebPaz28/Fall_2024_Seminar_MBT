@@ -234,35 +234,12 @@ str_extract(Query_ID, "length_[0-9]+"),
 str_extract(Query_ID, "cov_[0-9]+\\.[0-9]+"))
 ```
 
-
-
-
 > Incomplete
 
 > We need to check the number of NA's that are found in the searches and what these NA's are.
 > We can also filter by e.value to remove low value (low probability) matches
 
 I am thinking that I can add a new column (sample or something) so that I can generate an excel with all of the data in one file. This will be useful because I can filter by sample if I would like to. This will make analysis highly throughput.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Pfam?
@@ -273,7 +250,7 @@ I may try to use the pfam database (as described in the early portion of this co
 ## Extracting relevant nodes/contigs
 
 - EXAMPLE CODE
-```{r}
+```{r, eval=FALSE}
 library(Biostrings)
 library(stringr)
 library(tidyverse)
@@ -304,7 +281,7 @@ writeXStringSet(filtered_sequences, filepath = output_file)
 May have to separate the node portion
 
 
-```{r}
+```{r, eval=FALSE}
 # Extract the node name (assumes header format NODE_x_length_y_cov_z)
 parsed_ids <- str_extract(transcript_ids, "NODE_\\d+")
 head(parsed_ids)

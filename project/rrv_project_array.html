@@ -11,7 +11,7 @@
 
 <meta name="author" content="Paslay" />
 
-<meta name="date" content="2024-11-07" />
+<meta name="date" content="2024-12-20" />
 
 <title>rrv_project_array</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">rrv_project_array</h1>
 <h4 class="author">Paslay</h4>
-<h4 class="date">2024-11-07</h4>
+<h4 class="date">2024-12-20</h4>
 
 </div>
 
@@ -392,23 +392,24 @@ interest.</p>
 <div id="preliminary-steps" class="section level2">
 <h2>Preliminary steps</h2>
 <ul>
-<li>We can start by creating all of the directories needed throughout
-the downstream process.
-<ol style="list-style-type: decimal">
-<li>Raw SRA data</li>
-<li>Reference genomes</li>
-<li>Trimming</li>
-<li>Alignment (BWA or hisat2)</li>
-<li>Gathering unmapped reads</li>
-<li>Do novo assembly</li>
-</ol></li>
+<li><p>We can start by creating all of the directories needed throughout
+the downstream process.</p></li>
+<li><p>We can also create the scripts with generic names. For examples,
+we can simple call a sample <code>sample_1_1.fastq</code> and
+<code>sample_1_2.fastq</code>. This can be repeated for each sample
+being processed. This will keep things in a very simple way.</p></li>
 </ul>
-<pre class="bach"><code>mkdir raw_data
+<pre class="bach"><code>mmkdir alignment_data
+mkdir assembly_data
+mkdir blast_results
+mkdir databases
+mkdir databases/protein_db
+mkdir databases/nucleotide_db
 mkdir reference_seq
+mkdir scripts
 mkdir trimmed_reads
-mmkdir alignment_data
 mkdir unmapped_reads
-mkdir assembly_data</code></pre>
+mkdir raw_data</code></pre>
 <ul>
 <li>As a reminder, we may have to change environments throughout the
 process.</li>
@@ -538,50 +539,146 @@ file</a></strong></p></li>
 <div id="assembly-of-unmapped-reads-rnaspades" class="section level2">
 <h2>Assembly of unmapped reads (rnaSPADES)</h2>
 <ol style="list-style-type: decimal">
-<li><p><strong><a href="array_scripts/">sh script</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">sbatch
+<li><p><strong><a href="array_scripts/assembly_array.sh">sh
+script</a></strong></p></li>
+<li><p><strong><a href="array_scripts/assembly_array.sbatch">sbatch
 file</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">.args</a></strong></p></li>
+<li><p><strong><a href="array_scripts/assembly_array.args">.args</a></strong></p></li>
 </ol>
 <blockquote>
-<p>Incomplete</p>
+<p>DONE!</p>
 </blockquote>
 </div>
-<div id="constructing-databases-for-blastn-and-diamond" class="section level2">
-<h2>Constructing databases for BLASTn and Diamond</h2>
+<div id="downloading-sequence-data-for-diamond-searches-and-constructing-the-database" class="section level2">
+<h2>Downloading sequence data for Diamond searches and constructing the
+database</h2>
+<ul>
+<li>I was able to incorporate the <code>mkdb</code> command as a
+separate line after pulling the protein sequence data. This puts
+everything into one script.</li>
+</ul>
 <ol style="list-style-type: decimal">
-<li><p><strong><a href="array_scripts/">.sh script</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">.sbatch
+<li><p><strong><a href="array_scripts/protein_db_download.sh">.sh
+script</a></strong></p></li>
+<li><p><strong><a href="array_scripts/protein_db_download.sbatch">.sbatch
 file</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">.args</a></strong></p></li>
 </ol>
-<p>I may have to use the <code>mkdb</code> commands separately.</p>
 <blockquote>
-<p>Incomplete</p>
+<p>DONE!</p>
 </blockquote>
+</div>
+<div id="downloading-sequence-data-for-blastn-searches-and-constructing-the-database" class="section level2">
+<h2>Downloading sequence data for BLASTn searches and constructing the
+database</h2>
+<ul>
+<li>I was able to incorporate the <code>makeblastdb</code> command as a
+separate line after pulling the nucleotide sequence data. This puts
+everything into one script.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p><strong><a href="array_scripts/nucleotide_db_download.sh">.sh
+script</a></strong></p></li>
+<li><p><strong><a href="array_scripts/nucleotide_db_download.sh">.sbatch
+file</a></strong></p></li>
+</ol>
+<ul>
+<li><p>The command in this script appears to also construct the BLAST
+database, and no additional database making is required. We can simply
+begin our blast search.</p></li>
+<li><p>The blasting is still acting weird when trying to pull data from
+the nt_viruses folders. I may have to use the tar command to decompress
+all the files.</p></li>
+</ul>
+<pre><code>for file in nt_viruses.*.tar.gz; do
+    tar -xzvf &quot;$file&quot;
+done</code></pre>
 </div>
 <div id="blasting" class="section level2">
 <h2>Blasting</h2>
 <ol style="list-style-type: decimal">
-<li><p><strong><a href="array_scripts/">.sh script</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">.sbatch
+<li><p><strong><a href="array_scripts/protein_nt_blasting.sh">.sh
+script</a></strong></p></li>
+<li><p><strong><a href="array_scripts/protein_nt_blasting.sbatch">.sbatch
 file</a></strong></p></li>
-<li><p><strong><a href="array_scripts/">.args</a></strong></p></li>
+<li><p><strong><a href="array_scripts/protein_nt_blasting.args">.args</a></strong></p></li>
 </ol>
+<ul>
+<li>This command threw an error, but it seems that all of the blast
+stuff worked!</li>
+</ul>
+<blockquote>
+<p>DONE!</p>
+</blockquote>
+</div>
+<div id="analyze-blast-results-for-both-protein-and-nucleotide-blast" class="section level2">
+<h2>Analyze BLAST results for both protein and nucleotide blast</h2>
+<p>This portion of the analysis can be performed in R.</p>
+<pre class="r"><code>df_1 &lt;- read.csv(&quot;data_output/array_blast/nt_results_1.csv&quot;, header = FALSE)
+
+colnames(df_1) &lt;- c(&quot;NODE_Info&quot;,&quot;Query_ID&quot;,&quot;Seq_Title&quot;, &quot;Percent_ID&quot;, &quot;Align_Length&quot;, &quot;Mismatch&quot;, &quot;Gap_Open&quot;, &quot;Query_Start&quot;, &quot;Query_End&quot;, &quot;Seq_Start&quot;,&quot;Send&quot;, &quot;Evalue&quot;, &quot;bitscore&quot;)
+
+df_split &lt;- df_1 %&gt;% 
+  mutate(NODE = str_extract(NODE_Info,&quot;NODE_[0-9]+&quot;),
+         LENGTH = 
+str_extract(Query_ID, &quot;length_[0-9]+&quot;),
+         COV = 
+str_extract(Query_ID, &quot;cov_[0-9]+\\.[0-9]+&quot;))</code></pre>
 <blockquote>
 <p>Incomplete</p>
 </blockquote>
-</div>
-<div id="analyze-blast-results-for-both-nucleotide-and-protein-blast" class="section level2">
-<h2>Analyze BLAST results for both nucleotide and protein blast</h2>
-<p>This portion of the analysis can be performed in R.</p>
 <blockquote>
-<p>Incomplete</p>
+<p>We need to check the number of NA’s that are found in the searches
+and what these NA’s are. We can also filter by e.value to remove low
+value (low probability) matches</p>
 </blockquote>
 <p>I am thinking that I can add a new column (sample or something) so
 that I can generate an excel with all of the data in one file. This will
 be useful because I can filter by sample if I would like to. This will
 make analysis highly throughput.</p>
+</div>
+<div id="pfam" class="section level2">
+<h2>Pfam?</h2>
+<p>I may try to use the pfam database (as described in the early portion
+of this course). This may be useful for the NA’s sequences to see if
+there are any highly conserved protein regions that are of interest.</p>
+</div>
+<div id="extracting-relevant-nodescontigs" class="section level2">
+<h2>Extracting relevant nodes/contigs</h2>
+<ul>
+<li>EXAMPLE CODE</li>
+</ul>
+<pre class="r"><code>library(Biostrings)
+library(stringr)
+library(tidyverse)
+# Read the transcript FASTA file
+fasta_file &lt;- &quot;data_output/transcripts.fasta&quot;
+transcripts &lt;- readDNAStringSet(fasta_file)
+
+# View the sequence IDs (headers)
+transcript_ids &lt;- names(transcripts)
+head(transcript_ids)
+
+
+# Extract unique IDs from the first column
+nodes_of_interest &lt;- unique(blast_results$V1)  # Adjust column number if needed
+head(nodes_of_interest)
+
+# Filter sequences based on nodes of interest
+filtered_sequences &lt;- transcripts[transcript_ids %in% nodes_of_interest]
+
+# View filtered sequences
+print(filtered_sequences)
+
+# Write filtered sequences to a new FASTA file
+output_file &lt;- &quot;filtered_transcripts.fasta&quot;
+writeXStringSet(filtered_sequences, filepath = output_file)</code></pre>
+<p>May have to separate the node portion</p>
+<pre class="r"><code># Extract the node name (assumes header format NODE_x_length_y_cov_z)
+parsed_ids &lt;- str_extract(transcript_ids, &quot;NODE_\\d+&quot;)
+head(parsed_ids)
+
+# Filter using partial match
+filtered_sequences &lt;- transcripts[parsed_ids %in% nodes_of_interest]</code></pre>
 </div>
 
 
